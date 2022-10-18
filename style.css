@@ -92,3 +92,40 @@ h5{
     font-weight: 500;
     margin: 10px 0;
 }
+
+/* Style the complte footer to be as minimalist as possible */
+footer {
+    bottom: 0;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #2b1055;
+}
+
+/* Style the social media icons */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.social a {
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
