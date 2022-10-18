@@ -9,7 +9,6 @@
 
 body{
 	text-align: center;
-    min-height: 100vh;
     overflow-x: hidden;
     background: linear-gradient(#0F1020, black);
 }
@@ -46,11 +45,7 @@ header ul li a:hover, header ul li a.active{
 }
 
 #demo-text {
-    text-overflow: ellipsis;
-  /* Required for text-overflow to do anything */
-  white-space: nowrap;
-  overflow: hidden;
-	font-size: 650px;
+	font-size: 550px;
 	font-weight: 900;
 	background-clip: text;
 	-webkit-background-clip: text;
