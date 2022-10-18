@@ -1,94 +1,57 @@
-/* Make everything pretty */
-
-
-/* Design the header and container div */
-#header {
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 5px;
-}
-#container {
-    width: 1000px;
-    background-color: #FFFFFF;
-    margin: 0 auto;
-}
-
-/* Design the navigation bar */
-#nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    height:300px;
-    width:100px;
-    float:left;
-    padding:5px;	      
-}
-#nav a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-}
-
-/* Design the content div */
-#content {
-    background-color: #eeeeee;
-    width: 900px;
-    float: left;
-    padding: 10px;
-}
-
-/* Design the footer div */
-#footer {
-    background-color: #000000;
-    color: #FFFFFF;
-    clear: both;
-    text-align: center;
-    padding: 5px;	 	 
-}
-
-/* Design the table */
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* Design the form */
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
-input[type=submit] {
+body{
+	text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#0F1020, black);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover, header ul li a.active{
+    background: #fff;
+    color: #2b1055;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+#demo-text {
+	font-size: 650px;
+	font-weight: 900;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url('demo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-
-
-
