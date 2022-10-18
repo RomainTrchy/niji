@@ -45,7 +45,7 @@ header ul li a:hover, header ul li a.active{
     color: #2b1055;
 }
 
-#demo-text {
+#logo-text {
 	font-size: 650px;
 	font-weight: 900;
 	background-clip: text;
@@ -55,3 +55,12 @@ header ul li a:hover, header ul li a.active{
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+#myBtn {
+    background: #fff;
+    color: #2b1055;
+    padding: 6px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
