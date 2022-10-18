@@ -54,6 +54,18 @@ header ul li a:hover, header ul li a.active{
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88%;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
 .card{
     width:200px;
     height: 230px;
@@ -72,4 +84,11 @@ header ul li a:hover, header ul li a.active{
 .card:hover{
     transform: scale(1.1);
     transition: all 0.5s ease;
+}
+
+h5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
 }
