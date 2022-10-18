@@ -54,3 +54,22 @@ header ul li a:hover, header ul li a.active{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.card{
+    width:200px;
+    height: 230px;
+    display:inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: linear-gradient(45deg, #2b1055, #0F1020);
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
