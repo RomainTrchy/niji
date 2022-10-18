@@ -46,6 +46,10 @@ header ul li a:hover, header ul li a.active{
 }
 
 #demo-text {
+    text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
 	font-size: 650px;
 	font-weight: 900;
 	background-clip: text;
@@ -54,9 +58,4 @@ header ul li a:hover, header ul li a.active{
 	background-image: url('demo.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-#demo-text span {
-    font-size: 50px;
-    font-weight: 400;
 }
