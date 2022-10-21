@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+ul{
+    list-style: none;
+  }
+
 body{
 	text-align: center;
     min-height: 100vh;
