@@ -69,6 +69,7 @@ header ul li a.active {
   justify-content: center;
   align-items: center;
   height: 88%;
+  margin-bottom: 100px;
 }
 
 .col-card {
