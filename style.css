@@ -61,9 +61,7 @@ header ul li a.active {
   -webkit-background-clip: text;
   color: transparent;
   background-image: url("demo.jpg");
-  background-size: contain;
-  background
-  /* background-repeat: no-repeat; */
+  background-size: cover;
 }
 
 .row-card {
