@@ -62,6 +62,7 @@ header ul li a.active {
   color: transparent;
   background-image: url("demo.jpg");
   background-size: contain;
+  background
   /* background-repeat: no-repeat; */
 }
 
