@@ -1,5 +1,3 @@
-
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
   margin: 0;
@@ -16,7 +14,7 @@ ul {
 body {
   text-align: center;
   min-height: 100vh;
-  background: var(--gradient-color);
+  background: white;
 }
 
 header {
@@ -42,13 +40,13 @@ header ul li {
 header ul li a {
   text-decoration: none;
   padding: 6px 15px;
-  color: var(--color-text);
+  color: black;
   border-radius: 20px;
 }
 header ul li a:hover,
 header ul li a.active {
-  background: #fff;
-  color: #2b1055;
+  background: #2b1055;
+  color: white;
 }
 
 #logo-text {
@@ -82,7 +80,7 @@ header ul li a.active {
   box-sizing: border-box;
   cursor: pointer;
   margin: 10px 15px;
-  background-image: linear-gradient(#0f1020, black);
+  background-color: #2b1055;
   background-position: center;
   background-size: cover;
   transition: 0.5s;
@@ -105,7 +103,7 @@ h5 {
 }
 
 footer {
-  background: linear-gradient(black, #0f1020);
+  background: #2b1055;
   position: relative;
   width: 100%;
   min-height: 350px;
