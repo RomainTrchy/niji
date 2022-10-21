@@ -100,7 +100,7 @@ footer {
     padding: 3rem 1rem;
   }
   
-  .container #footer-containe {
+  #footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,31 +109,31 @@ footer {
     max-width: 1170px;
   }
   
-  .row #footer-row{
+  #footer-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .col #footer-col{
+  #footer-col{
     min-width: 250px;
     color: white;
     padding: 0 2rem;
   }
   
-  .col #footer-col .logo{
+  #footer-col .logo{
     width: 50px;
     margin-bottom: 25px;
   }
   
-  .col #footer-col h3{
+  #footer-col h3{
     font-size: 1.5rem;
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
   }
   
-  .col #footer-col h3::after{
+  #footer-col h3::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -143,21 +143,21 @@ footer {
     background-color: white;
     transition: 0.3s ease;
   }
-  .col #footer-col h3:hover::after{
+  #footer-col h3:hover::after{
     width: 30px;
   }
-  .col #footer-col .social a i{
+  #footer-col .social a i{
     color: white;
     font-size: 1.5rem;
     margin-top: 10px;
     margin-right: 10px;
     transition: 0.3s ease;
   }
-  .col #footer-col .social a i:hover{
+  #footer-col .social a i:hover{
     transform: scale(1.2);
   }
   
-  .col #footer-col .links a{
+  #footer-col .links a{
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
@@ -186,10 +186,10 @@ footer {
   /* Responsive design */
   
   @media(max-width: 900px){
-    .row{
+    .row #footer-row{
       flex-direction: column;
     }
-    .col{
+    .col #footer-col{
       width: 100%;
       text-align: left;
       margin-bottom: 30px;
@@ -197,10 +197,10 @@ footer {
   }
   
   @media(max-width: 600px){
-    .row{
+    .row #footer-row{
       flex-direction: column;
     }
-    .col{
+    .col #footer-col{
       width: 100%;
       text-align: left;
       margin-bottom: 20px;
