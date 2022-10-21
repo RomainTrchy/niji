@@ -16,10 +16,6 @@ body {
   background: white;
 }
 
-body:not(footer){
-    text-align:center;
-}
-
 header {
   position: absolute;
   top: 0;
@@ -52,7 +48,13 @@ header ul li a.active {
   color: white;
 }
 
-#logo-text {
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
   font-size: 650px;
   font-weight: 900;
   background-clip: text;
