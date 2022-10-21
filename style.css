@@ -1,6 +1,7 @@
-:root
---main-color-text: black;
---main-color-background: white;
+:root{
+    --color-text: #f00;
+    --color-background: #0f0;
+}
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
