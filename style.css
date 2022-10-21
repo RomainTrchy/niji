@@ -136,8 +136,14 @@ footer {
   padding: 0 2rem;
 }
 
-.col .logo {
-  width: 50px;
+.col .logo-text-footer {
+  font-size: 50px;
+  font-weight: 900;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("demo.jpg");
+  background-size: contain;
   margin-bottom: 25px;
 }
 
