@@ -80,7 +80,20 @@ header ul li a.active {
   box-sizing: border-box;
   cursor: pointer;
   margin: 10px 15px;
-  background-image: linear-gradient(45deg, #2b1055, #0f1020);
+  background-opacity: 0.1;
+  background-image: linear-gradient(
+    180deg,
+    #fe0000 16.66%,
+    #fd8c00 16.66%,
+    33.32%,
+    #ffe500 33.32%,
+    49.98%,
+    #119f0b 49.98%,
+    66.64%,
+    #0644b3 66.64%,
+    83.3%,
+    #c22edc 83.3%
+  );
   background-position: center;
   background-size: cover;
   transition: 0.5s;
