@@ -48,10 +48,10 @@ header ul li a.active {
   color: white;
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-text {
@@ -72,7 +72,7 @@ header ul li a.active {
 }
 
 .col-card {
-  flex-basis: 50%;
+  flex-basis: 66%;
 }
 
 .card {
