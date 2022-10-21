@@ -121,19 +121,19 @@ footer {
     padding: 0 2rem;
   }
   
-  .col .logo{
+  .col #footer-col .logo{
     width: 50px;
     margin-bottom: 25px;
   }
   
-  .col h3{
+  .col #footer-col h3{
     font-size: 1.5rem;
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
   }
   
-  .col h3::after{
+  .col #footer-col h3::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -143,28 +143,28 @@ footer {
     background-color: white;
     transition: 0.3s ease;
   }
-  .col h3:hover::after{
+  .col #footer-col h3:hover::after{
     width: 30px;
   }
-  .col .social a i{
+  .col #footer-col .social a i{
     color: white;
     font-size: 1.5rem;
     margin-top: 10px;
     margin-right: 10px;
     transition: 0.3s ease;
   }
-  .col .social a i:hover{
+  .col #footer-col .social a i:hover{
     transform: scale(1.2);
   }
   
-  .col .links a{
+  .col #footer-col .links a{
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
     position: relative;
     transition: 0.3s ease;
   }
-  .col .links a:before{
+  .col #footer-col .links a:before{
     content: '';
     position: absolute;
     top: 5px;
@@ -175,10 +175,10 @@ footer {
     transition: 0.5s ease;
     opacity: 0;
   }
-  .col .links a:hover:before{
+  .col #footer-col .links a:hover:before{
     opacity: 1;
   }
-  .col .links a:hover{
+  .col #footer-col .links a:hover{
     transform: translateX(-8px);
     color: #2c0652;
   }
