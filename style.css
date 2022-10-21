@@ -14,7 +14,7 @@ ul {
 body {
   text-align: center;
   min-height: 100vh;
-  background: linear-gradient(#0f1020, black);
+  background: linear-gradient(0deg, rgba(212,212,212,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 header {
