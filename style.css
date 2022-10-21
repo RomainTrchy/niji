@@ -16,6 +16,10 @@ body {
   background: white;
 }
 
+body:not(footer){
+    text-align:center;
+}
+
 header {
   position: absolute;
   top: 0;
