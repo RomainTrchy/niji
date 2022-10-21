@@ -1,7 +1,4 @@
-:root{
-    --color-text: #f00;
-    --color-background: #0f0;
-}
+
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
@@ -19,7 +16,7 @@ ul {
 body {
   text-align: center;
   min-height: 100vh;
-  background: linear-gradient(0deg, rgba(212,212,212,1) 0%, rgba(255,255,255,1) 100%);
+  background: var(--gradient-color);
 }
 
 header {
@@ -45,7 +42,7 @@ header ul li {
 header ul li a {
   text-decoration: none;
   padding: 6px 15px;
-  color: var(--main-color-text);
+  color: var(--color-text);
   border-radius: 20px;
 }
 header ul li a:hover,
