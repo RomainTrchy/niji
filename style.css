@@ -86,8 +86,8 @@ header ul li a.active {
   transition: 0.5s;
 }
 
-.card p{
-    color: #fff;
+.card p {
+  color: #fff;
 }
 
 .card:hover {
