@@ -1,3 +1,7 @@
+:root
+--main-color-text: black;
+--main-color-background: white;
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
   margin: 0;
@@ -40,7 +44,7 @@ header ul li {
 header ul li a {
   text-decoration: none;
   padding: 6px 15px;
-  color: #fff;
+  color: var(--main-color-text);
   border-radius: 20px;
 }
 header ul li a:hover,
