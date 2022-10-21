@@ -93,11 +93,116 @@ h5{
     margin: 10px 0;
 }
 
-/* Style the complte footer to be as minimalist as possible */
 footer {
-    bottom: 0;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    background: linear-gradient(black, #2c0652);  position: relative;
     width: 100%;
-}
+    min-height: 350px;
+    padding: 3rem 1rem;
+  }
+  
+  .container #footer-containe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+  
+  .row #footer-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .col #footer-col{
+    min-width: 250px;
+    color: white;
+    padding: 0 2rem;
+  }
+  
+  .col .logo{
+    width: 50px;
+    margin-bottom: 25px;
+  }
+  
+  .col h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .col h3::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s ease;
+  }
+  .col h3:hover::after{
+    width: 30px;
+  }
+  .col .social a i{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: 0.3s ease;
+  }
+  .col .social a i:hover{
+    transform: scale(1.2);
+  }
+  
+  .col .links a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.3s ease;
+  }
+  .col .links a:before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    width: 3px;
+    height: 16px;
+    background-color: white;
+    transition: 0.5s ease;
+    opacity: 0;
+  }
+  .col .links a:hover:before{
+    opacity: 1;
+  }
+  .col .links a:hover{
+    transform: translateX(-8px);
+    color: #2c0652;
+  }
+  
+  /* Responsive design */
+  
+  @media(max-width: 900px){
+    .row{
+      flex-direction: column;
+    }
+    .col{
+      width: 100%;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media(max-width: 600px){
+    .row{
+      flex-direction: column;
+    }
+    .col{
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
