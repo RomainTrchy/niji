@@ -2,11 +2,9 @@ const allPanels = document.querySelectorAll(".visible-panel");
 console.log(allPanels);
 
 allPanels.forEach((element) => {
-
-
-  
   element.addEventListener("mouseenter", function () {
-    
+    const height = this.parentNode.childNodes[1].scrollHeight;
+    const currentChoice = this.
     console.log(currentChoice);
     gsap.to(currentChoice, {
       duration: 0.2,
@@ -17,7 +15,7 @@ allPanels.forEach((element) => {
   });
 
   element.addEventListener("mouseout", function () {
-    const currentChoice = document.querySelectorAll(".toggle-panel");
+    const currentChoice = document.querySelector(".toggle-panel");
     gsap.to(currentChoice, {
       duration: 0.2,
       height: 0,
