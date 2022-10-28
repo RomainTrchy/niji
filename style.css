@@ -223,6 +223,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  border-top: 1px solid #2b1055;
   z-index: 100;
 }
 
