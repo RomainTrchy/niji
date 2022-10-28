@@ -224,7 +224,6 @@ footer {
 
 .visible-panel {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background: #f1f1f1;
@@ -232,14 +231,19 @@ footer {
   z-index: 100;
 }
 
+.visible-pannel img {
+  margin-right: 10px;
+  width: 25px;
+  cursor: pointer;
+}
+
 .visible-panel h2 {
   margin-left: 10px;
   padding: 15px 5px;
   font-size: 25px;
-  cursor: pointer;
 }
 .toggle-panel {
-  padding: 20px 15px;
+  padding: 0px 15px;
   height: 0px;
   opacity: 0;
 }
