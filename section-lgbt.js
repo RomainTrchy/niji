@@ -4,8 +4,8 @@ console.log(allPanels);
 allPanels.forEach(element => {
   console.log(element);
   element.addEventListener("mouseenter", function () {
-    const height = this.parentNode.childNodes[1].scrollHeight;
-    const currentChoice = this.parentNode.childNodes[1];
+    const height = this.parentNode.childNodes[3].scrollHeight;
+    const currentChoice = this.parentNode.childNodes[3];
     gsap.to(currentChoice, {
       duration: 0.2,
       height: height + 40,
@@ -15,7 +15,7 @@ allPanels.forEach(element => {
   });
 
   element.addEventListener("mouseout", function () {
-    const currentChoice = this.parentNode.childNodes[1];
+    const currentChoice = this.parentNode.childNodes[3];
     gsap.to(currentChoice, {
       duration: 0.2,
       height: 0,
