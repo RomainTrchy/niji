@@ -225,12 +225,31 @@ footer {
 .visible-panel{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   background: #f1f1f1;
   position:relative;
   z-index: 100;
 }
+
+.visible-panel h2{
+  margin-left: 10px;
+  padding: 15px 5px;
+  font-size: 25px;
+  cursor:pointer;
+}
+
+.toggle-panel{
+  padding:0px 15px;
+  height:0px;
+  opacity:0;
+}
+
+.toggle-panel p{
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+
 /* Responsive design */
 
 @media (max-width: 900px) {
