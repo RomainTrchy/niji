@@ -238,13 +238,6 @@ footer {
   font-size: 25px;
   cursor: pointer;
 }
-
-.visible-panel img {
-  margin-right: 10px;
-  width: 25px;
-  cursor: pointer;
-}
-
 .toggle-panel {
   padding: 20px 15px;
   height: 0px;
