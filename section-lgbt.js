@@ -5,7 +5,8 @@ allPanels.forEach((element) => {
   element.addEventListener("mouseenter", function () {
     const height = this.parentNode.childNodes[1].scrollHeight;
     console.log(this.parentNode.childNodes[1]);
-    const currentChoice = document.querySelectorAll(".toggle-panel");
+    // const currentChoice as to be the toggle panel that is currently open and needs to be closed
+    const currentChoice = this.parentNode.childNodes[1];
     gsap.to(currentChoice, {
       duration: 0.2,
       height: height + 40,
