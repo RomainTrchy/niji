@@ -8,7 +8,7 @@ allCross.forEach(element => {
     const currentChoice = this.parentNode.parentNode.childNodes[3];
 
     // console.log(this.src);
-    if (this.src.includes("croix")) {
+    if (this.src.includes("plus")) {
       this.src = "images/minus.png";
       gsap.to(currentChoice, {
         duration: 0.2,
