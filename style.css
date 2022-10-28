@@ -247,16 +247,15 @@ footer {
 
 .visible-panel {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   position: relative;
-  border-top: 1px solid #2b1055;
   z-index: 100;
 }
 
 .visible-panel h2 {
   font-family: "NeueMetanaNext", sans-serif;
-  margin-left: 10px;
+  margin-left: 30px;
   padding: 15px 5px;
   font-size: 80px;
   font-weight: 600;
@@ -269,32 +268,36 @@ footer {
 }
 
 .toggle-panel p {
-  margin: 10px 0;
+  margin-left: 30px;
+  margin-right: 30px;
   font-size: 15px;
   line-height: 1.5;
 }
 
 .lesbiennes {
-  background: -webkit-linear-gradient(
-    180deg,
-    #fe0000 16.66%,
-    #fd8c00 16.66%,
-    33.32%,
-    #ffe500 33.32%,
-    49.98%,
-    #119f0b 49.98%,
-    66.64%,
-    #0644b3 66.64%,
-    83.3%,
-    #c22edc 83.3%
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    #a60061 14.285%,
+    #b95393 14.285%,
+    28.57%,
+    #d260a7 28.57%,
+    42.855%,
+    #ededeb 42.855%,
+    57.14%,
+    #e5abd0 57.14%,
+    71.425%,
+    #c74d52 71.425%,
+    85.71%,
+    #8c1d00 85.71%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-image-slice: 1;
 }
 
 .gays {
-  background: -webkit-linear-gradient(
-    180deg,
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
     #fe0000 16.66%,
     #fd8c00 16.66%,
     33.32%,
@@ -306,25 +309,25 @@ footer {
     83.3%,
     #c22edc 83.3%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-image-slice: 1;
 }
 
 .bisexuels {
-  background: -webkit-linear-gradient(
-    180deg,
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
     #d60270 40%,
     #9b4f96 40%,
     60%,
     #0038a8 60%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-image-slice: 1;
 }
 
 .transexuels {
-  background: -webkit-linear-gradient(
-    180deg,
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
     #5bcefa 20%,
     #f5a9b8 20%,
     40%,
@@ -334,56 +337,57 @@ footer {
     80%,
     #5bcefa 80%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-image-slice: 1;
 }
 
 .queers {
-  background: -webkit-linear-gradient(
-    180deg,
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
     #b57edc 33.33%,
     #ffffff 33.33%,
     66.66%,
     #4a8123 66.66%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-image-slice: 1;
 }
 
-.intersexes{
-  background: -webkit-linear-gradient(
-    180deg,
+.intersexes {
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
     #b57edc 33.33%,
     #ffffff 33.33%,
     66.66%,
     #4a8123 66.66%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-image-slice: 1;
 }
 
-.asexuels{
-  background: -webkit-linear-gradient(
-    180deg,
-    #b57edc 33.33%,
-    #ffffff 33.33%,
-    66.66%,
-    #4a8123 66.66%
+.asexuels {
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    #181818 25%,
+    #a3a3a3 25%,
+    50%,
+    #ffffff 50%,
+    75%,
+    #800080 75%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-image-slice: 1;
 }
 
-.plus{
-  background: -webkit-linear-gradient(
-    180deg,
+.plus {
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
     #b57edc 33.33%,
     #ffffff 33.33%,
     66.66%,
     #4a8123 66.66%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    border-image-slice: 1;
 }
 
 /* Responsive design */
