@@ -274,13 +274,116 @@ footer {
   line-height: 1.5;
 }
 
-.lesbiennes{
-  color: linear-gradient(180deg, #FE0000 16.66%,
-		#FD8C00 16.66%, 33.32%,
-		#FFE500 33.32%, 49.98%,
-		#119F0B 49.98%, 66.64%,
-		#0644B3 66.64%, 83.3%,
-		#C22EDC 83.3%);
+.lesbiennes {
+  background: -webkit-linear-gradient(
+    180deg,
+    #fe0000 16.66%,
+    #fd8c00 16.66%,
+    33.32%,
+    #ffe500 33.32%,
+    49.98%,
+    #119f0b 49.98%,
+    66.64%,
+    #0644b3 66.64%,
+    83.3%,
+    #c22edc 83.3%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gays {
+  background: -webkit-linear-gradient(
+    180deg,
+    #fe0000 16.66%,
+    #fd8c00 16.66%,
+    33.32%,
+    #ffe500 33.32%,
+    49.98%,
+    #119f0b 49.98%,
+    66.64%,
+    #0644b3 66.64%,
+    83.3%,
+    #c22edc 83.3%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bisexuels {
+  background: -webkit-linear-gradient(
+    180deg,
+    #d60270 40%,
+    #9b4f96 40%,
+    60%,
+    #0038a8 60%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.transexuels {
+  background: -webkit-linear-gradient(
+    180deg,
+    #5bcefa 20%,
+    #f5a9b8 20%,
+    40%,
+    #ffffff 40%,
+    60%,
+    #f5a9b8 60%,
+    80%,
+    #5bcefa 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.queers {
+  background: -webkit-linear-gradient(
+    180deg,
+    #b57edc 33.33%,
+    #ffffff 33.33%,
+    66.66%,
+    #4a8123 66.66%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intersexes{
+  background: -webkit-linear-gradient(
+    180deg,
+    #b57edc 33.33%,
+    #ffffff 33.33%,
+    66.66%,
+    #4a8123 66.66%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.asexuels{
+  background: -webkit-linear-gradient(
+    180deg,
+    #b57edc 33.33%,
+    #ffffff 33.33%,
+    66.66%,
+    #4a8123 66.66%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.plus{
+  background: -webkit-linear-gradient(
+    180deg,
+    #b57edc 33.33%,
+    #ffffff 33.33%,
+    66.66%,
+    #4a8123 66.66%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Responsive design */
