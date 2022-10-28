@@ -1,10 +1,9 @@
-const togglePanel = document.querySelector(".toggle-panel");
-const visiblePanel = document.querySelector(".visible-panel");
+function sectionLGBT(){
+    var section = document.getElementById('toggle');
 
-visiblePanel.addEventListener("click", () => {
-  if (togglePanel.style.display === "none") {
-    togglePanel.style.display = "block";
-  } else {
-    togglePanel.style.display = "none";
-  }
-});
+    if(section.style.opacity === '0'){
+        section.style.opacity = '1';
+    } else {
+        section.style.opacity = '0';
+    }
+}
