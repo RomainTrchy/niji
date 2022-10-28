@@ -52,6 +52,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
   z-index: 10000;
 }
 header ul {
@@ -100,7 +101,7 @@ header ul li a.active {
 }
 
 .col-card {
-  flex-basis: 66%;
+  flex-basis: auto;
 }
 
 .card {
