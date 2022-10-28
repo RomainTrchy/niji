@@ -205,10 +205,10 @@ footer {
 }
 
 .container-lgbt {
-  width:70%;
+  width: 70%;
   max-width: 900px;
   min-width: 700px;
-  height:auto;
+  height: auto;
   margin: 10px auto 0;
   display: flex;
   flex-direction: column;
@@ -217,38 +217,38 @@ footer {
 }
 
 .section-lgbt {
-  width:100%;
+  width: 100%;
   height: auto;
-  margin:5px;
+  margin: 5px;
 }
 
-.visible-panel{
+.visible-panel {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #f1f1f1;
-  position:relative;
+  position: relative;
   z-index: 100;
 }
 
-.visible-panel h2{
+.visible-panel h2 {
   margin-left: 10px;
   padding: 15px 5px;
   font-size: 25px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.toggle-panel{
-  padding:0px 15px;
-  height:0px;
-  opacity:0;
+.toggle-panel {
+  padding: 20px 15px;
+  height: 0px;
+  opacity: 0;
 }
 
-.toggle-panel p{
+.toggle-panel p {
   margin: 10px 0;
   font-size: 15px;
+  line-height: 1.5;
 }
-
 
 /* Responsive design */
 
