@@ -4,7 +4,7 @@ console.log(allPanels);
 allPanels.forEach((element) => {
   element.addEventListener("mouseenter", function () {
     const height = this.parentNode.childNodes[1].scrollHeight;
-    const currentChoice = this.includes(".toggle-panel");
+    const currentChoice = document.querySelector(".toggle-panel");
     console.log(currentChoice);
     gsap.to(currentChoice, {
       duration: 0.2,
