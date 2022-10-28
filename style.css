@@ -268,12 +268,10 @@ footer {
   font-weight: 600;
 }
 
-.visible-panel:hover {
-  .toggle-panel {
+.visible-panel:hover + .toggle-panel{
     opacity: 1;
     height: 40px;
     padding: "20px 15px";
-  }
 }
 
 .toggle-panel {
