@@ -1,4 +1,4 @@
-const allCross = document.querySelectorAll(".visible-panel img");
+const allCross = document.querySelectorAll(".visible-panel h2");
 console.log(allCross);
 
 allCross.forEach((element) => {
