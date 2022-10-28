@@ -254,12 +254,6 @@ footer {
   z-index: 100;
 }
 
-.visible-panel img {
-  margin-right: 10px;
-  width: 25px;
-  cursor: pointer;
-}
-
 .visible-panel h2 {
   font-family: "NeueMetanaNext", sans-serif;
   margin-left: 10px;
