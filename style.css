@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-@font-face{
+@font-face {
   font-family: "Gavency";
   src: url("fonts/Gavency Free Regular.otf") format("opentype");
   font-weight: 400;
@@ -17,7 +17,7 @@
   font-style: normal;
 }
 
-@font-face{
+@font-face {
   font-family: "NeueMetanaNext";
   src: url("fonts/NeueMetanaNext-SemiBold.otf") format("opentype"),
     url("fonts/NeueMetanaNextOutline-Black.otf") format("opentype");
@@ -267,6 +267,15 @@ footer {
   font-size: 80px;
   font-weight: 600;
 }
+
+.visible-panel:hover {
+  .toggle-panel {
+    opacity: 1;
+    height: 40px;
+    padding: "20px 15px";
+  }
+}
+
 .toggle-panel {
   padding: 0px 15px;
   height: 0px;
