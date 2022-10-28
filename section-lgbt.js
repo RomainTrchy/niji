@@ -1,7 +1,7 @@
 const allCross = document.querySelectorAll(".visible-panel img");
 console.log(allCross);
 
-allCross.forEach(element => {
+allCross.forEach((element) => {
   element.addEventListener("click", function () {
     const height = this.parentNode.parentNode.childNodes[3].scrollHeight;
 
@@ -17,7 +17,7 @@ allCross.forEach(element => {
         padding: "20px 15px",
       });
     } else if (this.src.includes("minus")) {
-      this.src = "images/croix.png";
+      this.src = "images/plus.png";
       gsap.to(currentChoice, {
         duration: 0.2,
         height: 0,
