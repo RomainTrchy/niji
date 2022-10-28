@@ -1,11 +1,12 @@
-const allCross = document.querySelectorAll(".visible-panel");
+const allCross = document.querySelectorAll(".visible-panel img");
 console.log(allCross);
 
 allCross.forEach((element) => {
   element.addEventListener("click", function () {
     const height = this.parentNode.parentNode.childNodes[3].scrollHeight;
     const currentChoice = this.parentNode.parentNode.childNodes[3];
-    if (this.src.includes("visible")) {
+    if (this.src.includes("croix")) {
+      this.src = "images/minus.svg";
       gsap.to(currentChoice, {
         duration: 0.5,
         height: height + 40,
@@ -13,7 +14,8 @@ allCross.forEach((element) => {
         padding: "20px 15px",
         ease: "power2.out",
       });
-    } else if (this.src.includes("toggle")) {
+    } else if (this.src.includes("minus")) {
+      this.src = "images/croix.svg";
       gsap.to(currentChoice, {
         duration: 0.5,
         height: 0,
