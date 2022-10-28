@@ -8,6 +8,7 @@ allPanels.forEach((element) => {
     // const currentChoice as to be the toggle panel that is currently open and needs to be closed
     const currentChoice = this.parentNode.parentNode.childNodes[3];
     console.log(currentChoice);
+    console.log(this.src);
     gsap.to(currentChoice, {
       duration: 0.2,
       height: height + 40,
