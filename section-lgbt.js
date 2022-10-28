@@ -6,7 +6,7 @@ allCross.forEach((element) => {
     const height = this.parentNode.parentNode.childNodes[3].scrollHeight;
     const currentChoice = this.parentNode.parentNode.childNodes[3];
     if (this.src.includes("croix")) {
-      this.src = "images/minus.svg";
+      this.src = "images/minus.png";
       gsap.to(currentChoice, {
         duration: 0.5,
         height: height + 40,
@@ -15,7 +15,7 @@ allCross.forEach((element) => {
         ease: "power2.out",
       });
     } else if (this.src.includes("minus")) {
-      this.src = "images/croix.svg";
+      this.src = "images/plus.png";
       gsap.to(currentChoice, {
         duration: 0.5,
         height: 0,

@@ -239,11 +239,10 @@ footer {
   cursor: pointer;
 }
 
-.visible-panel img{
+.visible-panel img {
   margin-right: 10px;
   width: 25px;
   cursor: pointer;
-  
 }
 
 .toggle-panel {
