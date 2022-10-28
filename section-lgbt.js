@@ -28,4 +28,11 @@ allCross.forEach((element) => {
   });
 });
 
+const allPanels = document.querySelectorAll(".visible-panel");
+console.log(allPanels);
 
+allPanels.forEach((element) => {
+  element.addEventListener("mouseenter", function () {
+    
+  });
+});
