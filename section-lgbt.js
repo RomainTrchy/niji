@@ -2,7 +2,7 @@ const allCross = document.querySelectorAll(".visible-panel img");
 console.log(allCross);
 
 allCross.forEach((element) => {
-  element.addEventListener("click", function () {
+  element.addEventListener("mouseenter", function () {
     const height = this.parentNode.parentNode.childNodes[3].scrollHeight;
 
     const currentChoice = this.parentNode.parentNode.childNodes[3];
