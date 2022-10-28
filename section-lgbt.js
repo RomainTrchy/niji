@@ -1,4 +1,4 @@
-const allCross = document.querySelectorAll(".visible-panel h2");
+const allCross = document.querySelectorAll(".visible-panel img");
 console.log(allCross);
 
 allCross.forEach((element) => {
@@ -33,6 +33,13 @@ console.log(allPanels);
 
 allPanels.forEach((element) => {
   element.addEventListener("mouseenter", function () {
-    
+    const height = this.childNodes[3].scrollHeight;
+    const currentChoice = this.childNodes[3];
+    gsap.to(currentChoice, {
+      duration: 0.2,
+      height: height + 40,
+      opacity: 1,
+      padding: "20px 15px",
+    });
   });
 });
