@@ -204,6 +204,33 @@ footer {
   color: #2c0652;
 }
 
+.container-lgbt {
+  width:70%;
+  max-width: 900px;
+  min-width: 700px;
+  height:auto;
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section-lgbt {
+  width:100%;
+  height: auto;
+  margin:5px;
+}
+
+.visible-panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  position:relative;
+  z-index: 100;
+}
 /* Responsive design */
 
 @media (max-width: 900px) {
