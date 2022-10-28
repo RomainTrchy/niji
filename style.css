@@ -8,6 +8,24 @@
   font-display: swap;
   font-style: normal;
 }
+
+@font-face{
+  font-family: "Gavency";
+  src: url("fonts/Gavency Free Regular.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "NeueMetanaNext";
+  src: url("fonts/NeueMetanaNext-SemiBold.otf") format("opentype"),
+    url("fonts/NeueMetanaNextOutline-Black.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,6 +82,7 @@ header ul li a.active {
 }
 
 .logo-text {
+  font-family: "NeueMetanaNext", sans-serif;
   font-size: 650px;
   font-weight: 900;
   background-clip: text;
@@ -243,7 +262,7 @@ footer {
 }
 
 .visible-panel h2 {
-  font-family: "Clash Display", sans-serif;
+  font-family: "NeueMetanaNext", sans-serif;
   margin-left: 10px;
   padding: 15px 5px;
   font-size: 80px;
