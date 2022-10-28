@@ -5,7 +5,7 @@ function mousePanels() {
 
   allPanels.forEach((element) => {
     element.addEventListener(
-      "mouseenter",
+      "mouseover",
       function () {
         const height = this.parentNode.childNodes[3].scrollHeight;
         const currentChoice = this.parentNode.childNodes[3];
@@ -23,7 +23,7 @@ function mousePanels() {
             opacity: 0,
             padding: "0px 15px",
           });
-        }, 5000);
+        }, 500);
       },
       false
     );
