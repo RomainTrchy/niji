@@ -401,54 +401,13 @@ footer {
   overflow: hidden;
   position: relative;
 }
-.headband h3 {
+.headband p {
   position: absolute;
   width: 100%;
   height: 100%;
   margin: 0;
   line-height: 50px;
-
-  /* Starting position */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-
-  /* Apply animation to this element */
-  -moz-animation: headband 5s linear infinite;
-  -webkit-animation: headband 5s linear infinite;
-  animation: headband 5s linear infinite;
 }
-
-/* Move it (define the animation) */
-@-moz-keyframes headband {
-  0% {
-    -moz-transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(-100%);
-  }
-}
-@-webkit-keyframes headband {
-  0% {
-    -webkit-transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
-@keyframes headband {
-  0% {
-    -moz-transform: translateX(100%); /* Firefox bug fix */
-    -webkit-transform: translateX(100%); /* Firefox bug fix */
-    transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(-100%); /* Firefox bug fix */
-    -webkit-transform: translateX(-100%); /* Firefox bug fix */
-    transform: translateX(-100%);
-  }
-}
-
 /* Responsive design */
 
 @media (max-width: 900px) {
