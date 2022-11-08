@@ -407,7 +407,6 @@ footer {
   height: 100%;
   margin: 0;
   line-height: 50px;
-  text-align: center;
 
   /* Starting position */
   -moz-transform: translateX(100%);
@@ -415,9 +414,9 @@ footer {
   transform: translateX(100%);
 
   /* Apply animation to this element */
-  -moz-animation: headband 15s linear infinite;
-  -webkit-animation: headband 15s linear infinite;
-  animation: headband 15s linear infinite;
+  -moz-animation: headband 5s linear infinite;
+  -webkit-animation: headband 5s linear infinite;
+  animation: headband 5s linear infinite;
 }
 
 /* Move it (define the animation) */
