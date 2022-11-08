@@ -397,10 +397,12 @@ footer {
 }
 
 .marquee-text {
-  height: 25px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  height: 100px;
+  border:1px solid black;
 }
 
 .marquee-text div {
