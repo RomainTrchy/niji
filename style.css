@@ -1,33 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-@font-face {
-  font-family: "ClashDisplay-Bold";
-  src: url("fonts/ClashDisplay-Bold.woff2") format("woff2"),
-    url("fonts/ClashDisplay-Bold.woff") format("woff"),
-    url("fonts/ClashDisplay-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gavency";
-  src: url("fonts/Gavency Free Regular.otf") format("opentype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NeueMetanaNext";
-  src: url("fonts/NeueMetanaNext-SemiBold.otf") format("opentype"),
-    url("fonts/NeueMetanaNextOutline-Black.otf") format("opentype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +21,6 @@ body {
 }
 
 header {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -59,7 +29,6 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  border: 1px solid red;
 }
 header ul {
   display: flex;
@@ -85,12 +54,10 @@ header ul li a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid green;
 }
 
 .logo-text {
-  font-family: "PT Mono", monospace;
-  font-size: 620px;
+  font-size: 600px;
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
@@ -263,7 +230,6 @@ footer {
 }
 
 .visible-panel h2 {
-  font-family: "NeueMetanaNext", sans-serif;
   margin-left: 30px;
   padding: 15px 5px;
   font-size: 80px;
