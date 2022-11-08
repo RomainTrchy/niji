@@ -381,6 +381,7 @@ footer {
   position: absolute;
   overflow: hidden;
   animation: marquee 5s linear infinite;
+  white-space: nowrap;
 }
 
 .marquee-text span {
