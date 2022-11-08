@@ -81,14 +81,13 @@ header ul li a.active {
 
 .center {
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   border: 1px solid green;
 }
 
 .logo-text {
-  font-size: 650px;
+  font-size: 400px;
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
