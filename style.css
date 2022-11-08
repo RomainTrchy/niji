@@ -26,6 +26,8 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -87,7 +89,8 @@ header ul li a.active {
 }
 
 .logo-text {
-  font-size: 30px;
+  font-family: "PT Mono", monospace;
+  font-size: 100vh;
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
