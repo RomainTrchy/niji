@@ -366,37 +366,23 @@ footer {
   border-image-slice: 1;
 }
 
-.marquee-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  border:1px solid black;
-}
-
-.marquee-text div {
-  display: block;
-  width: 200%;
-  height: 30px;
-  position: absolute;
+.hero-marquee {
+  margin-top: 2rem;
   overflow: hidden;
-  animation: marquee 5s linear infinite;
   white-space: nowrap;
+  position: relative;
 }
 
-.marquee-text span {
-  float: left;
-  width: 50%;
+.marquee {
+  font-size: 0;
 }
 
-@keyframes marquee {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
+.clipped-text {
+  display: inline-block;
+  font-size: 25px;
+  margin-right: 100px;
 }
+
 /* Responsive design */
 
 @media (max-width: 900px) {
