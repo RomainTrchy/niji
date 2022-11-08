@@ -401,6 +401,7 @@ footer {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  white-space: pre;
 }
 /* Responsive design */
 
