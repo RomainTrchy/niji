@@ -57,6 +57,7 @@ header ul li a.active {
 }
 
 .logo-text {
+  line-height: 1;
   font-size: 600px;
   font-weight: 900;
   background-clip: text;
