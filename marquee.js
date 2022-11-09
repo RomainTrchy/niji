@@ -10,7 +10,7 @@ addEventListener("load", function () {
     let container = el.parentElement;
     gsap.to(container, time, {
       repeat: -1,
-      x: "-" + totalDistance,
+      xPercent: -totalDistance/ container.clientWidth * 100,
       ease: Linear.easeNone,
     });
     let clone = el.cloneNode(true);
