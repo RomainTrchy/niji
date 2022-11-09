@@ -21,7 +21,15 @@
     </div>
 
     <div class="center">
-      <img class="background-img" src="demo.jpg" />
+      <script>
+        function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        document.write('<img class="background-img" src="./images/' + getRandomInt(1, 4) + '.jpg">');
+      </script>
     </div>
 
     <div class="container-lgbt">
