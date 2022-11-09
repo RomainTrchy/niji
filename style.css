@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
 :root {
-  --primary-color: #000000;
-  --secondary-color: #f3f3f3;
+  --secondary-color: #000000;
+  --primary-color: #f3f3f3;
 
   --lesbian-gradient: linear-gradient(90deg, #a60061 14.285%, #b95393 14.285%, 28.57%, #d260a7 28.57%, 42.855%, #ededeb 42.855%, 57.14%, #e5abd0 57.14%, 71.425%, #c74d52 71.425%, 85.71%, #8c1d00 85.71%);
   --gay-gradient: linear-gradient(90deg, #fe0000 16.66%, #fd8c00 16.66%, 33.32%, #ffe500 33.32%, 49.98%, #119f0b 49.98%, 66.64%, #0644b3 66.64%, 83.3%, #c22edc 83.3%);
