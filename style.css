@@ -470,6 +470,20 @@ footer {
   color: #2c0652;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --secondary-color: #000;
+    --primary-color: #f3f3f3;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --secondary-color: #f3f3f3;
+    --primary-color: #000;
+  }
+}
+
 @media (max-width: 1200px) {
   :root {
     --secondary-margin: 0 20px 0 20px;
