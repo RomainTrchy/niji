@@ -104,7 +104,6 @@ tiles.forEach(function (t) {
     rect.style.width = "500px";
     rect.style.height = "200px";
     rect.style.borderRadius = "var(--primary-border-radius)";
-    // rect.style.backgroundColor = "hsl(" + Math.floor(Math.random() * 360) + ", 100%, 90%)";
     document.body.appendChild(rect);
 
     var text = document.createElement("h3");
