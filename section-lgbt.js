@@ -17,12 +17,12 @@ window.addEventListener(
 );
 
 function mousePanels() {
-  const allPanels = document.querySelectorAll(".visible-panel");
+  var allPanels = document.querySelectorAll(".visible-panel");
 
   allPanels.forEach((element) => {
     element.addEventListener("mouseenter", function () {
-      const height = this.parentNode.childNodes[3].scrollHeight;
-      const currentChoice = this.parentNode.childNodes[3];
+      var height = this.parentNode.childNodes[3].scrollHeight;
+      var currentChoice = this.parentNode.childNodes[3];
       gsap.to(currentChoice, {
         duration: 0.2,
         height: height + 40,
@@ -32,7 +32,7 @@ function mousePanels() {
     });
 
     element.addEventListener("mouseout", function () {
-      const currentChoice = this.parentNode.childNodes[3];
+      var currentChoice = this.parentNode.childNodes[3];
       gsap.to(currentChoice, {
         duration: 0.2,
         height: 0,

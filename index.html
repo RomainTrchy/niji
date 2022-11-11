@@ -18,16 +18,20 @@
 	</div>
 	<div class="hero-marquee">
 		<div class="marquee">
-			<span class="clipped-text"><strong>Les Pridays</strong> - 4 et 5 fév. 2023 - <strong>Le Gymnase</strong>, 7 place Sépastopol.</span>
-			<span class="clipped-text"><strong>Les Pridays</strong>	- 4 et 5 fév. 2023 - <strong>Le Gymnase</strong>, 7 place Sépastopol.</span>
+			<span class="clipped-text"><strong>Les Pridays</strong> - 4 et 5 fév. 2023 - <strong>Le Gymnase</strong>, 7
+				place Sépastopol.</span>
+			<span class="clipped-text"><strong>Les Pridays</strong> - 4 et 5 fév. 2023 - <strong>Le Gymnase</strong>, 7
+				place Sépastopol.</span>
 		</div>
 	</div>
-	<div class="center">
+	<div class="center" id="images-center">
 		<script>
 			function getRandomInt(t, a) {
 				return t = Math.ceil(t), a = Math.floor(a), Math.floor(Math.random() * (a - t)) + t
 			}
-			document.write('<img class="background-img" src="./images/' + getRandomInt(1, 4) + '.jpg">');
+			const image = document.createElement("img");
+			image.src = `./images/${getRandomInt(1, 4)}.jpg`;
+			document.querySelector("#images-center").appendChild(image);
 		</script>
 	</div>
 	<div class="center">
