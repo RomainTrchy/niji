@@ -1,58 +1,94 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap";
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
 :root {
   --secondary-color: #000;
   --primary-color: #f3f3f3;
-  --lesbian-gradient: linear-gradient(90deg, #a60061 14.285%, #b95393 14.285%, 28.57%, #d260a7 28.57%, 42.855%, #ededeb 42.855%, 57.14%, #e5abd0 57.14%, 71.425%, #c74d52 71.425%, 85.71%, #8c1d00 85.71%);
-  --gay-gradient: linear-gradient(90deg, #fe0000 16.66%, #fd8c00 16.66%, 33.32%, #ffe500 33.32%, 49.98%, #119f0b 49.98%, 66.64%, #0644b3 66.64%, 83.3%, #c22edc 83.3%);
+  --lesbian-gradient:
+    linear-gradient(
+      90deg,
+      #a60061 14.285%,
+      #b95393 14.285%,
+      28.57%,
+      #d260a7 28.57%,
+      42.855%,
+      #ededeb 42.855%,
+      57.14%,
+      #e5abd0 57.14%,
+      71.425%,
+      #c74d52 71.425%,
+      85.71%,
+      #8c1d00 85.71%
+    );
+  --gay-gradient:
+    linear-gradient(
+      90deg,
+      #fe0000 16.66%,
+      #fd8c00 16.66%,
+      33.32%,
+      #ffe500 33.32%,
+      49.98%,
+      #119f0b 49.98%,
+      66.64%,
+      #0644b3 66.64%,
+      83.3%,
+      #c22edc 83.3%
+    );
   --bisexual-gradient: linear-gradient(90deg, #d60270 40%, #9b4f96 40%, 60%, #0038a8 60%);
-  --transexual-gradient: linear-gradient(90deg, #5bcefa 20%, #f5a9b8 20%, 40%, #fff 40%, 60%, #f5a9b8 60%, 80%, #5bcefa 80%);
+  --transexual-gradient:
+    linear-gradient(
+      90deg,
+      #5bcefa 20%,
+      #f5a9b8 20%,
+      40%,
+      #fff 40%,
+      60%,
+      #f5a9b8 60%,
+      80%,
+      #5bcefa 80%
+    );
   --asexual-gradient: linear-gradient(90deg, #181818 25%, #a3a3a3 25%, 50%, #fff 50%, 75%, purple 75%);
   --plus-gradient: linear-gradient(90deg, #b57edc 33.33%, #fff 33.33%, 66.66%, #4a8123 66.66%);
   --sex-border-bottom: 8px solid transparent;
   --sex-border-image-slice: 1;
-  --primary-font: Poppins, sans-serif;
+  --primary-font: poppins, sans-serif;
   --primary-margin: 2rem 150px 2rem 150px;
   --secondary-margin: 2rem 150px 0 150px;
   --primary-border-radius: 5px;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--primary-font);
   scroll-behavior: smooth;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
+
 .disable-hover {
   pointer-events: none;
 }
+
 ul {
   list-style: none;
 }
+
 body {
   min-height: 100vh;
   background: var(--secondary-color);
 }
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
   object-fit: cover;
 }
+
 .center h1 {
   font-size: 100px;
   font-weight: 600;
   color: var(--primary-color);
-}
-
-#images-center img{
-  margin: var(--primary-margin);
-  width: 100%;
-  height:80vh;
-  border-radius: var(--primary-border-radius);
-  object-fit: cover;
 }
 
 .hero-marquee {
@@ -62,24 +98,29 @@ body {
   position: relative;
   margin: var(--secondary-margin);
 }
+
 .marquee {
   font-size: 0;
 }
+
 .clipped-text {
   display: inline-block;
   font-size: 25px;
   margin-right: 100px;
 }
+
 .gallery {
   height: 90vh;
   margin: var(--primary-margin);
   overflow: hidden;
 }
+
 #gallery {
   overflow: hidden;
   position: relative;
   height: 100%;
 }
+
 .tile {
   border-radius: var(--primary-border-radius);
   position: absolute;
@@ -87,99 +128,124 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .tile:hover {
   transform: scale(1.1);
 }
+
 .tile > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transform: scale(1.01);
 }
+
+#images-center img {
+  margin: var(--primary-margin);
+  width: 100%;
+  height: 80vh;
+  border-radius: var(--primary-border-radius);
+  object-fit: cover;
+}
+
 .tile:nth-child(1) {
   width: calc(144% / 1620 * 100);
   height: calc(72% / 920 * 100);
   left: calc(33% / 1620 * 100);
   top: calc(20% / 920 * 100);
 }
+
 .tile:nth-child(2) {
   width: calc(197% / 1620 * 100);
   height: calc(93% / 920 * 100);
   left: calc(196% / 1620 * 100);
   top: calc(20% / 920 * 100);
 }
+
 .tile:nth-child(3) {
   width: calc(144% / 1620 * 100);
   height: calc(236% / 920 * 100);
   left: calc(412% / 1620 * 100);
   top: calc(20% / 920 * 100);
 }
+
 .tile:nth-child(4) {
   width: calc(72% / 1620 * 100);
   height: calc(93% / 920 * 100);
   left: calc(577% / 1620 * 100);
   top: calc(20% / 920 * 100);
 }
+
 .tile:nth-child(5) {
   width: calc(142% / 1620 * 100);
   height: calc(175% / 920 * 100);
   left: calc(670% / 1620 * 100);
   top: calc(20% / 920 * 100);
 }
+
 .tile:nth-child(6) {
   width: calc(123% / 1620 * 100);
   height: calc(154% / 920 * 100);
   left: calc(833% / 1620 * 100);
   top: calc(20% / 920 * 100);
 }
+
 .tile:nth-child(7) {
   width: calc(124% / 1620 * 100);
   height: calc(93% / 920 * 100);
   left: calc(976% / 1620 * 100);
   top: calc(20% / 920 * 100);
 }
+
 .tile:nth-child(8) {
   width: calc(195% / 1620 * 100);
   height: calc(154% / 920 * 100);
   left: calc(1120% / 1620 * 100);
   top: calc(20% / 920 * 100);
 }
+
 .tile:nth-child(9) {
   width: calc(173% / 1620 * 100);
   height: calc(266% / 920 * 100);
   left: calc(1336% / 1620 * 100);
   top: calc(20% / 920 * 100);
 }
+
 .tile:nth-child(10) {
   width: calc(72% / 1620 * 100);
   height: calc(72% / 920 * 100);
   left: calc(1530% / 1620 * 100);
   top: calc(20% / 920 * 100);
 }
+
 .tile:nth-child(11) {
   width: calc(93% / 1620 * 100);
   height: calc(61% / 920 * 100);
   left: calc(13% / 1620 * 100);
   top: calc(113% / 920 * 100);
 }
+
 .tile:nth-child(12) {
   width: calc(50% / 1620 * 100);
   height: calc(70% / 920 * 100);
   left: calc(126% / 1620 * 100);
   top: calc(113% / 920 * 100);
 }
+
 .tile:nth-child(13) {
   width: calc(52% / 1620 * 100);
   height: calc(51% / 920 * 100);
   left: calc(196% / 1620 * 100);
   top: calc(144% / 920 * 100);
 }
+
 .tile:nth-child(14) {
   width: calc(124% / 1620 * 100);
   height: calc(142% / 920 * 100);
   left: calc(269% / 1620 * 100);
   top: calc(144% / 920 * 100);
 }
+
 .tile:nth-child(15) {
   border-radius: 50%;
   width: calc(52% / 1620 * 100);
@@ -187,36 +253,42 @@ body {
   left: calc(33% / 1620 * 100);
   top: calc(195% / 920 * 100);
 }
+
 .tile:nth-child(16) {
   width: calc(142% / 1620 * 100);
   height: calc(175% / 920 * 100);
   left: calc(106% / 1620 * 100);
   top: calc(215% / 920 * 100);
 }
+
 .tile:nth-child(17) {
   width: calc(72% / 1620 * 100);
   height: calc(93% / 920 * 100);
   left: calc(13% / 1620 * 100);
   top: calc(266% / 920 * 100);
 }
+
 .tile:nth-child(18) {
   width: calc(26% / 1620 * 100);
   height: calc(60% / 920 * 100);
   left: calc(269% / 1620 * 100);
   top: calc(319% / 920 * 100);
 }
+
 .tile:nth-child(19) {
   width: calc(123% / 1620 * 100);
   height: calc(91% / 920 * 100);
   left: calc(315% / 1620 * 100);
   top: calc(319% / 920 * 100);
 }
+
 .tile:nth-child(20) {
   width: calc(154% / 1620 * 100);
   height: calc(155% / 920 * 100);
   left: calc(459% / 1620 * 100);
   top: calc(271% / 920 * 100);
 }
+
 .tile:nth-child(21) {
   border-radius: 50%;
   width: calc(52% / 1620 * 100);
@@ -224,30 +296,35 @@ body {
   left: calc(587% / 1620 * 100);
   top: calc(144% / 920 * 100);
 }
+
 .tile:nth-child(22) {
   width: calc(52% / 1620 * 100);
   height: calc(49% / 920 * 100);
   left: calc(973% / 1620 * 100);
   top: calc(134% / 920 * 100);
 }
+
 .tile:nth-child(23) {
   width: calc(143% / 1620 * 100);
   height: calc(236% / 920 * 100);
   left: calc(639% / 1620 * 100);
   top: calc(231% / 920 * 100);
 }
+
 .tile:nth-child(24) {
   width: calc(118% / 1620 * 100);
   height: calc(149% / 920 * 100);
   left: calc(803% / 1620 * 100);
   top: calc(215% / 920 * 100);
 }
+
 .tile:nth-child(25) {
   width: calc(51% / 1620 * 100);
   height: calc(103% / 920 * 100);
   left: calc(941% / 1620 * 100);
   top: calc(245% / 920 * 100);
 }
+
 .tile:nth-child(26) {
   border-radius: 60%;
   width: calc(92% / 1620 * 100);
@@ -255,66 +332,77 @@ body {
   left: calc(1013% / 1620 * 100);
   top: calc(195% / 920 * 100);
 }
+
 .tile:nth-child(27) {
   width: calc(52% / 1620 * 100);
   height: calc(71% / 920 * 100);
   left: calc(1137% / 1620 * 100);
   top: calc(200% / 920 * 100);
 }
+
 .tile:nth-child(28) {
   width: calc(72% / 1620 * 100);
   height: calc(92% / 920 * 100);
   left: calc(1227% / 1620 * 100);
   top: calc(200% / 920 * 100);
 }
+
 .tile:nth-child(29) {
   width: calc(50% / 1620 * 100);
   height: calc(51% / 920 * 100);
   left: calc(1557% / 1620 * 100);
   top: calc(113% / 920 * 100);
 }
+
 .tile:nth-child(30) {
   width: calc(72% / 1620 * 100);
   height: calc(93% / 920 * 100);
   left: calc(1535% / 1620 * 100);
   top: calc(183% / 920 * 100);
 }
+
 .tile:nth-child(31) {
   width: calc(52% / 1620 * 100);
   height: calc(51% / 920 * 100);
   left: calc(1494% / 1620 * 100);
   top: calc(297% / 920 * 100);
 }
+
 .tile:nth-child(32) {
   width: calc(121% / 1620 * 100);
   height: calc(92% / 920 * 100);
   left: calc(1362% / 1620 * 100);
   top: calc(303% / 920 * 100);
 }
+
 .tile:nth-child(33) {
   width: calc(216% / 1620 * 100);
   height: calc(66% / 920 * 100);
   left: calc(1120% / 1620 * 100);
   top: calc(313% / 920 * 100);
 }
+
 .tile:nth-child(34) {
   width: calc(138% / 1620 * 100);
   height: calc(206% / 920 * 100);
   left: calc(900% / 1620 * 100);
   top: calc(379% / 920 * 100);
 }
+
 .tile:nth-child(35) {
   width: calc(91% / 1620 * 100);
   height: calc(122% / 920 * 100);
   left: calc(796% / 1620 * 100);
   top: calc(390% / 920 * 100);
 }
+
 .tile:nth-child(36) {
   width: calc(51% / 1620 * 100);
   height: calc(104% / 920 * 100);
   left: calc(1054% / 1620 * 100);
   top: calc(379% / 920 * 100);
 }
+
 .background-img {
   border-radius: var(--primary-border-radius);
   margin: var(--primary-margin);
@@ -322,6 +410,7 @@ body {
   height: 80vh;
   object-fit: cover;
 }
+
 .container-lgbt {
   width: 100%;
   height: auto;
@@ -331,10 +420,12 @@ body {
   align-items: flex-start;
   color: var(--primary-color);
 }
+
 .section-lgbt {
   width: 100%;
   height: auto;
 }
+
 .visible-panel {
   display: flex;
   justify-content: left;
@@ -343,60 +434,72 @@ body {
   z-index: 100;
   margin: var(--primary-margin);
 }
+
 .visible-panel h2 {
   font-size: 25px;
   font-weight: 400;
 }
+
 .toggle-panel {
   margin: var(--secondary-margin);
   padding: 0 15px;
   height: 0;
   opacity: 0;
 }
+
 .toggle-panel p {
   font-size: 25px;
   line-height: 1.5;
 }
+
 .lesbiennes {
   border-bottom: var(--sex-border-bottom);
   border-image: var(--lesbian-gradient);
   border-image-slice: var(--sex-border-image-slice);
 }
+
 .gays {
   border-bottom: var(--sex-border-bottom);
   border-image: var(--gay-gradient);
   border-image-slice: var(--sex-border-image-slice);
 }
+
 .bisexuels {
   border-bottom: var(--sex-border-bottom);
   border-image: var(--bisexual-gradient);
   border-image-slice: var(--sex-border-image-slice);
 }
+
 .transexuels {
   border-bottom: var(--sex-border-bottom);
   border-image: var(--transexual-gradient);
   border-image-slice: var(--sex-border-image-slice);
 }
+
 .queers {
   border-bottom: var(--sex-border-bottom);
   border-image: var(--plus-gradient);
   border-image-slice: var(--sex-border-image-slice);
 }
+
 .intersexes {
   border-bottom: var(--sex-border-bottom);
   border-image: var(--plus-gradient);
   border-image-slice: var(--sex-border-image-slice);
 }
+
 .asexuels {
   border-bottom: var(--sex-border-bottom);
   border-image: var(--asexual-gradient);
   border-image-slice: var(--sex-border-image-slice);
 }
+
 .plus {
   border-bottom: var(--sex-border-bottom);
   border-image: var(--plus-gradient);
   border-image-slice: var(--sex-border-image-slice);
 }
+
 footer {
   background: var(--secondary-color);
   position: relative;
@@ -405,6 +508,7 @@ footer {
   padding: 3rem 1rem;
   overflow: hidden;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -413,22 +517,26 @@ footer {
   margin: 0 auto;
   max-width: calc(100% - 300px);
 }
+
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .col {
   min-width: 250px;
   color: var(--primary-color);
   padding: 0 2rem;
 }
+
 .col h3 {
   font-size: 1.5rem;
   margin-bottom: 20px;
   position: relative;
   cursor: pointer;
 }
+
 .col h3::after {
   content: "";
   position: absolute;
@@ -439,9 +547,11 @@ footer {
   background-color: var(--primary-color);
   transition: 0.3s ease;
 }
+
 .col h3:hover::after {
   width: 30px;
 }
+
 .col .social a i {
   color: var(--primary-color);
   font-size: 1.5rem;
@@ -449,9 +559,11 @@ footer {
   margin-right: 10px;
   transition: 0.3s ease;
 }
+
 .col .social a i:hover {
   transform: scale(1.2);
 }
+
 .col .links a {
   color: var(--primary-color);
   text-decoration: none;
@@ -459,7 +571,8 @@ footer {
   position: relative;
   transition: 0.3s ease;
 }
-.col .links a:before {
+
+.col .links a::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -470,9 +583,11 @@ footer {
   transition: 0.5s ease;
   opacity: 0;
 }
-.col .links a:hover:before {
+
+.col .links a:hover::before {
   opacity: 1;
 }
+
 .col .links a:hover {
   transform: translateX(-8px);
   color: #2c0652;
@@ -508,12 +623,14 @@ footer {
   .row {
     flex-direction: column;
   }
+
   .col {
     width: 100%;
     text-align: left;
     margin-bottom: 30px;
   }
 }
+
 @media (max-width: 600px) {
   :root {
     --secondary-margin: 0 10px 0 10px;
@@ -528,6 +645,7 @@ footer {
   .row {
     flex-direction: column;
   }
+
   .col {
     width: 100%;
     text-align: left;
