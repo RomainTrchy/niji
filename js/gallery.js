@@ -1,3 +1,12 @@
+function generateTiles() {
+  for (let i = 0; i < 38; i++) {
+    const tiles = document.createElement('div');
+    tiles.classList.add('tile');
+    document.querySelector("#gallery").appendChild(tiles);
+  }
+}
+generateTiles();
+
 var tiles = document.querySelectorAll(".tile");
 var images = [
   "images/1%20-%20Do%20the%20Right%20Thing.jpg",
