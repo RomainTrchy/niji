@@ -1,7 +1,7 @@
 function generateTiles() {
   for (let i = 0; i < 38; i++) {
-    const tiles = document.createElement('div');
-    tiles.classList.add('tile');
+    const tiles = document.createElement("div");
+    tiles.classList.add("tile");
     document.querySelector("#gallery").appendChild(tiles);
   }
 }
@@ -59,9 +59,15 @@ var quotes = new Map([
     "The Assassination of Jesse James by the Coward Robert Ford",
     "“I can't believe I woke up this morning wondering if my daddy would loan me his overcoat, and here it is just past midnight and I've already robbed a railroad train and I'm sitting in a rocking chairchatting with none other than Jesse James.”",
   ],
-  ["The Girl on the Train", "“Lying is like taking a trip. It's like having a secret. It's like touching yourself and no one else knows. Except you.”"],
+  [
+    "The Girl on the Train",
+    "“Lying is like taking a trip. It's like having a secret. It's like touching yourself and no one else knows. Except you.”",
+  ],
   ["Blade Runner 2049", "“Dying for the right cause. It's the most human thing we can do.”"],
-  ["Interstellar", "“When I was a kid, it seemed like they made something new every day. Some, gadget or idea, like every day was Christmas.”"],
+  [
+    "Interstellar",
+    "“When I was a kid, it seemed like they made something new every day. Some, gadget or idea, like every day was Christmas.”",
+  ],
   ["Nightcrawler", "“The price hasn't been negotiated yet.”"],
   ["The Tree of Life", "“Life only really has one beginning and one end, and the rest is just a whole lot of middle.”"],
   ["Moonlight", "“You ain't got to love me, but you gonna know that I love you.”"],
@@ -70,7 +76,10 @@ var quotes = new Map([
   ["The Place Beyond the Pines", "“If you ride like lightning, you're gonna crash like thunder.”"],
   ["Blade Runner 2049", "“Every leap of civilization was built on the back of a disposable workforce.”"],
   ["Dont Breathe", "“There is nothing a man cannot do once he accepts the fact that there is no God.”"],
-  ["Moonlight", "“You the only man that's ever touched me. You're the only one. I haven't really touched anyone since.”"],
+  [
+    "Moonlight",
+    "“You the only man that's ever touched me. You're the only one. I haven't really touched anyone since.”",
+  ],
   ["Nocturnal Animals", "“Do you ever feel like your life has turned into something you never intended?”"],
   ["Arrival", "“Trust me, you can, uh, understand communication and still end up single.”"],
   ["Seven", "“Nobody throws me my own guns and says run. Nobody.”"],
@@ -80,15 +89,27 @@ var quotes = new Map([
   ["Blade Runner", "“Pain reminds you the joy you felt was real. More joy, then.”"],
   ["Nocturnal Animals", "“You can't just walk away from things all the time.”"],
   ["Eternal Sunshine of the Spotless Mind", ""],
-  ["Spring Breakers", "“You know what it's like saving money in New York? It's like making it with your sister - it's just not done.”"],
+  [
+    "Spring Breakers",
+    "“You know what it's like saving money in New York? It's like making it with your sister - it's just not done.”",
+  ],
   ["Arrival", "“We're a world with no single leader. It's impossible to deal with just one of us.”"],
   ["No Country for Old Men", "“Age will flatten a man.”"],
-  ["It Follows", "“I promise I'll never do it again. That's the one good thing about me. I never do the same wrong thing twice.”"],
-  ["The Ghost Writer", "“Forty thousand years of human language, and there's no word to describe our relationship. It was doomed.”"],
+  [
+    "It Follows",
+    "“I promise I'll never do it again. That's the one good thing about me. I never do the same wrong thing twice.”",
+  ],
+  [
+    "The Ghost Writer",
+    "“Forty thousand years of human language, and there's no word to describe our relationship. It was doomed.”",
+  ],
   ["The Hangover Part II", "“When a monkey nibbles on a penis, it's funny in any language.”"],
   ["Nightcrawler", "“A friend is a gift you give yourself.”"],
   ["How to Be Single", "“That’s life, you know. We never end up where you thought you wanted to be.”"],
-  ["The Grand Budapest Hotel", "“It's quite a thing, winning the loyalty of a woman like that for nineteen consecutive seasons.”"],
+  [
+    "The Grand Budapest Hotel",
+    "“It's quite a thing, winning the loyalty of a woman like that for nineteen consecutive seasons.”",
+  ],
 ]);
 
 tiles.forEach(function (t, a) {

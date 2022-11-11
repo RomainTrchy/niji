@@ -431,7 +431,6 @@ body {
   justify-content: left;
   align-items: center;
   position: relative;
-  z-index: 100;
   margin: var(--primary-margin);
 }
 
