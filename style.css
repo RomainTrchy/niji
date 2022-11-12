@@ -3,46 +3,49 @@
 :root {
   --secondary-color: #000;
   --primary-color: #f3f3f3;
-  --lesbian-gradient: linear-gradient(
-    90deg,
-    #a60061 14.285%,
-    #b95393 14.285%,
-    28.57%,
-    #d260a7 28.57%,
-    42.855%,
-    #ededeb 42.855%,
-    57.14%,
-    #e5abd0 57.14%,
-    71.425%,
-    #c74d52 71.425%,
-    85.71%,
-    #8c1d00 85.71%
-  );
-  --gay-gradient: linear-gradient(
-    90deg,
-    #fe0000 16.66%,
-    #fd8c00 16.66%,
-    33.32%,
-    #ffe500 33.32%,
-    49.98%,
-    #119f0b 49.98%,
-    66.64%,
-    #0644b3 66.64%,
-    83.3%,
-    #c22edc 83.3%
-  );
+  --lesbian-gradient:
+    linear-gradient(
+      90deg,
+      #a60061 14.285%,
+      #b95393 14.285%,
+      28.57%,
+      #d260a7 28.57%,
+      42.855%,
+      #ededeb 42.855%,
+      57.14%,
+      #e5abd0 57.14%,
+      71.425%,
+      #c74d52 71.425%,
+      85.71%,
+      #8c1d00 85.71%
+    );
+  --gay-gradient:
+    linear-gradient(
+      90deg,
+      #fe0000 16.66%,
+      #fd8c00 16.66%,
+      33.32%,
+      #ffe500 33.32%,
+      49.98%,
+      #119f0b 49.98%,
+      66.64%,
+      #0644b3 66.64%,
+      83.3%,
+      #c22edc 83.3%
+    );
   --bisexual-gradient: linear-gradient(90deg, #d60270 40%, #9b4f96 40%, 60%, #0038a8 60%);
-  --transexual-gradient: linear-gradient(
-    90deg,
-    #5bcefa 20%,
-    #f5a9b8 20%,
-    40%,
-    #fff 40%,
-    60%,
-    #f5a9b8 60%,
-    80%,
-    #5bcefa 80%
-  );
+  --transexual-gradient:
+    linear-gradient(
+      90deg,
+      #5bcefa 20%,
+      #f5a9b8 20%,
+      40%,
+      #fff 40%,
+      60%,
+      #f5a9b8 60%,
+      80%,
+      #5bcefa 80%
+    );
   --asexual-gradient: linear-gradient(90deg, #181818 25%, #a3a3a3 25%, 50%, #fff 50%, 75%, purple 75%);
   --plus-gradient: linear-gradient(90deg, #b57edc 33.33%, #fff 33.33%, 66.66%, #4a8123 66.66%);
   --sex-border-bottom: 8px solid transparent;
