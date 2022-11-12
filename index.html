@@ -9,10 +9,11 @@
 	<link rel="icon" href="favicon_io/favicon-32x32.png">
 	<link rel="icon" href="favicon_io/favicon-16x16.png">
 	<title>🏳️‍🌈 Niji</title>
+	<script defer src="js/animation.js"></script>
 </head>
 
 <body>
-	<div class="center">
+	<div class="center hidden">
 		<h1>niji</h1>
 	</div>
 	<div class="hero-marquee">
@@ -23,19 +24,19 @@
 				place Sépastopol.</span>
 		</div>
 	</div>
-	<div class="center" id="images-center">
+	<div class="center hidden" id="images-center">
 	</div>
 	<div class="center">
-		<h1>galerie</h1>
+		<h1 class="hidden">galerie</h1>
 	</div>
-	<div class="gallery">
+	<div class="gallery hidden">
 		<div id="gallery">
 		</div>
 	</div>
-	<div class="center">
+	<div class="center hidden">
 		<h1>définitions</h1>
 	</div>
-	<div class="container-lgbt">
+	<div class="container-lgbt hidden">
 		<div class="section-lgbt">
 			<div class="visible-panel lesbiennes">
 				<h2>Lesbiennes</h2>
@@ -159,7 +160,7 @@
 			</div>
 		</div>
 	</div>
-	<footer>
+	<footer class="hidden">
 		<div class="container">
 			<div class="row">
 				<div class="col" id="service">
