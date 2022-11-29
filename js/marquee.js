@@ -7,12 +7,14 @@ addEventListener("load", function () {
     let marginRight = parseInt(style.marginRight) || 0;
     let totalDistance = el.clientWidth + marginRight;
     let time = totalDistance / rate;
-    let container = el.parentElement;
+    let container = document.querySelector(".marquee");
+
     gsap.to(container, time, {
       repeat: -1,
-      xPercent: -totalDistance/ container.clientWidth * 100,
+      xPercent: (-totalDistance / container.clientWidth) * 100,
       ease: Linear.easeNone,
     });
+
     let clone = el.cloneNode(true);
     clone.classList.add("clone");
     container.appendChild(clone);
