@@ -84,6 +84,23 @@ ul {
 body {
   min-height: 100vh;
   background: var(--secondary-color);
+  cursor: none;
+}
+
+.cursor {
+  pointer-events: none;
+
+  &__ball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+
+    circle {
+      fill: #f7f8fa;
+    }
+  }
 }
 
 .center {
@@ -91,6 +108,10 @@ body {
   justify-content: center;
   align-items: center;
   object-fit: cover;
+
+  a {
+    text-decoration: none;
+  }
 
   h1 {
     font-size: 100px;
@@ -126,7 +147,7 @@ body {
 #gallery {
   overflow: hidden;
   position: relative;
-  height: 100%;
+  height: 140%;
 }
 
 .tile {
@@ -159,7 +180,7 @@ body {
 .tile {
   &:nth-child(1) {
     width: calc(144% / 1620 * 100);
-    height: calc(72% / 920 * 100);
+    height: calc(75% / 920 * 100);
     left: calc(33% / 1620 * 100);
     top: calc(20% / 920 * 100);
   }

@@ -10,11 +10,27 @@
 	<link rel="icon" href="favicon_io/favicon-16x16.png">
 	<title>🏳️‍🌈 Niji</title>
 	<script defer src="js/animation.js"></script>
+	<script defer src="js/cursor.js"></script>
 </head>
 
 <body>
+	<div class="cursor">
+		<div class="cursor__ball cursor__ball--big ">
+			<svg height="30" width="30">
+				<circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+			</svg>
+		</div>
+
+		<div class="cursor__ball cursor__ball--small">
+			<svg height="10" width="10">
+				<circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+			</svg>
+		</div>
+	</div>
 	<div class="center hidden">
-		<h1>niji</h1>
+		<a href="/index.html">
+			<h1 class="hoverable">niji</h1>
+		</a>
 	</div>
 	<div class="hero-marquee">
 		<div class="marquee">
@@ -27,14 +43,14 @@
 	<div class="center hidden" id="images-center">
 	</div>
 	<div class="center">
-		<h1 class="hidden">galerie</h1>
+		<h1 class="hidden hoverable">galerie</h1>
 	</div>
 	<div class="gallery hidden">
 		<div id="gallery">
 		</div>
 	</div>
 	<div class="center hidden">
-		<h1>définitions</h1>
+		<h1 class="hoverable">définitions</h1>
 	</div>
 	<div class="container-lgbt hidden">
 		<div class="section-lgbt">

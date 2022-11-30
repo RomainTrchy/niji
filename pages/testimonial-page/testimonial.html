@@ -13,11 +13,27 @@
     <title>🏳️‍🌈 Niji</title>
     <script defer src="../../js/animation.js"></script>
     <script defer src="../../js/testimonial.js"></script>
+    <script defer src="../../js/cursor.js"></script>
 </head>
 
 <body>
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+
+        <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
     <div class="center hidden">
-        <h1>niji</h1>
+        <a href="/index.html">
+            <h1>niji</h1>
+        </a>
     </div>
     <div class="block">
         <div class="testi-container hidden">
@@ -73,5 +89,4 @@
         </div>
     </footer>
 </body>
-
 </html>
