@@ -526,6 +526,8 @@ body {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   background: var(--secondary-color);
   position: relative;
   width: 100%;
