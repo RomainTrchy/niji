@@ -1,7 +1,6 @@
 import SimplexNoise from "simplex-noise";
-import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
-import "../pages/timeline-page/timeline.scss";
+import gsap from "gsap";
 
 const content = document.querySelector("#content");
 
