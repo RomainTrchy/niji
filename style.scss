@@ -46,6 +46,7 @@
   --asexual-gradient: linear-gradient(90deg, #181818 25%, #a3a3a3 25%, 50%, #fff 50%, 75%, purple 75%);
   --plus-gradient: linear-gradient(90deg, #b57edc 33.33%, #fff 33.33%, 66.66%, #4a8123 66.66%);
   --sex-border-bottom: 8px solid transparent;
+  --navbar-border-bottom: 4px solid transparent;
   --sex-border-image-slice: 1;
   --primary-font: poppins, sans-serif;
   --primary-margin: 2rem 150px 2rem 150px;
@@ -117,6 +118,14 @@ body {
     font-size: 100px;
     font-weight: 600;
     color: var(--primary-color);
+    margin: 0 2rem;
+  }
+
+  p {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin: 0 4rem;
   }
 }
 
