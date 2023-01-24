@@ -126,6 +126,7 @@ body {
     font-weight: 400;
     color: var(--primary-color);
     margin: 0 4rem;
+    border-bottom: 2px solid var(--primary-color);
   }
 }
 
@@ -626,6 +627,32 @@ footer {
       transform: translateX(-8px);
       color: #2c0652;
     }
+  }
+}
+
+.team-member{
+  // i want the img to be on the left and the text on the right
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+
+  h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+
+  p{
+    font-size: 1rem;
+    color: var(--primary-color);
   }
 }
 
