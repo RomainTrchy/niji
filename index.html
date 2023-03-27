@@ -12,49 +12,22 @@
     <script type="module" defer src="js/cursor.js"></script>
 </head>
 
-<body onload="move()">
-    <div class="cursor">
-        <div class="cursor__ball cursor__ball--big ">
-            <svg height="30" width="30">
-                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
-            </svg>
+<body>
+    <div class="nav">
+        <div class="items-left">
+            <a href="#">services</a>
+            <a href="#">about</a>
         </div>
-
-        <div class="cursor__ball cursor__ball--small">
-            <svg height="10" width="10">
-                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
-            </svg>
+        <div class="items-right">
+            <a href="#">contact</a>
+            <a href="#">login</a>
         </div>
     </div>
-
-    <div id="preloader">
-        <div id="percent">1%</div>
-        <div id="bar">
-            <div id="barconfirm"></div>
-        </div>
+    <div class="logo-container">
+        <h1 class="logo">NIJI</h1>
     </div>
-
-    <div class="navbar">
-        <div class="center hidden">
-            <a href="procedures.html">
-                <p class="hoverable">Procédures</p>
-            </a>
-            <a href="lexique.html">
-                <p class="hoverable">Lexique</p>
-            </a>
-            <a href="/index.html">
-                <h1 class="hoverable"><sup>&nbsp; </sup>niji<sup>+</sup></h1>
-            </a>
-            <a href="bibliographie.html">
-                <p class="hoverable">Bibliographie</p>
-            </a>
-            <a href="equipe.html">
-                <p class="hoverable">Notre équipe</p>
-            </a>
-
-        </div>
-    </div>
-
+    <div class="container"></div>
+    <div class="content"></div>
     <div class="hero-marquee">
         <div class="marquee">
             <span class="clipped-text"><strong>Évènement Jeu</strong> - A VENIR - <strong>Atrium HEI</strong> au 13 Rue
@@ -231,45 +204,22 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const tll = gsap.timeline({
-            paused: "true"
-        });
-        tll.to("#percent", "#bar", {
-            duration: .2,
-            opacity:0,
-            zIndex: -1,
-        });
-        tll.to("#preloader", {
-            duration: .8,
-            width: "0%"
-        });
-        var width = 1;
-        var bar = document.getElementById("barconfirm");
-        var id;
-        function move() {
-            id = setInterval(frame, 10);
-        }
-        function frame() {
-            if (width >= 100) {
-                clearInterval(id);
-                tll.play();
-            } else {
-                width++;
-                bar.style.width = width + "%";
-                document.getElementById("percent").innerHTML = width + "%";
-            }
-        }
-    </script>
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdn.rawgit.com/sarathsaleem/grained/master/grained.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script type="module" src="js/images-center.js"></script>
     <script type="module" src="js/section-lgbt.js"></script>
     <script type="module" src="js/marquee.js"></script>
     <script type="module" src="js/gallery.js"></script>
+    <script>
+        ScrollTrigger.create({
+            animation: gsap.from(".logo", { y: "50vh", scale: 6, yPercent: -50 }),
+            scrub: true,
+            trigger: ".content",
+            start: "top bottom",
+            endTrigger: ".content",
+            end: "top center",
+        });
+    </script>
 </body>
 
 </html>
