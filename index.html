@@ -2,232 +2,274 @@
 <html lang="fr">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="style.scss">
-	<link rel="apple-touch-icon" sizes="180x180" href="flavicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="flavicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="flavicon_io/favicon-16x16.png">
-	<title>Niji - Home</title>
-	<script type="module" defer src="js/animation.js"></script>
-	<script type="module" defer src="js/cursor.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="flavicon_io/favicon.ico">
+    <title>Niji - Home</title>
+    <script type="module" defer src="js/animation.js"></script>
+    <script type="module" defer src="js/cursor.js"></script>
 </head>
 
-<body>
-	<div class="cursor">
-		<div class="cursor__ball cursor__ball--big ">
-			<svg height="30" width="30">
-				<circle cx="15" cy="15" r="12" stroke-width="0"></circle>
-			</svg>
-		</div>
+<body onload="move()">
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
 
-		<div class="cursor__ball cursor__ball--small">
-			<svg height="10" width="10">
-				<circle cx="5" cy="5" r="4" stroke-width="0"></circle>
-			</svg>
-		</div>
-	</div>
-	<div class="center hidden">
-		<a href="procedures.html">
-			<p class="hoverable">Procédures</p>
-		</a>
-		<a href="lexique.html">
-			<p class="hoverable">Lexique</p>
-		</a>
-		<a href="/index.html">
-			<h1 class="hoverable">niji</h1>
-		</a>
-		<a href="equipe.html">
-			<p class="hoverable">Notre équipe</p>
-		</a>
-		<a href="bibliographie.html">
-			<p class="hoverable">Bibliographie</p>
-		</a>
-	</div>
-	<div class="hero-marquee">
-		<div class="marquee">
-			<span class="clipped-text"><strong>Les Pridays</strong> - 4 et 5 fév. 2023 - <strong>Le Gymnase</strong>, 7
-				place Sépastopol.</span>
-			<span class="clipped-text"><strong>Les Pridays</strong> - 4 et 5 fév. 2023 - <strong>Le Gymnase</strong>, 7
-				place Sépastopol.</span>
-		</div>
-	</div>
-	<div class="center hidden" id="images-center">
-	</div>
-	<div class="center">
-		<h1 class="hidden hoverable">galerie</h1>
-	</div>
-	<div class="gallery hidden">
-		<div id="gallery">
-		</div>
-	</div>
-	<div class="center hidden">
-		<h1 class="hoverable">définitions</h1>
-	</div>
-	<div class="container-lgbt hidden">
-		<div class="section-lgbt">
-			<div class="visible-panel lesbiennes">
-				<h2>Lesbiennes</h2>
-			</div>
-			<div class="toggle-panel">
-				<p>Cette lettre représente le mouvement lesbien. Les lesbiennes sont des femmes qui sont attirées par
-					d’autres femmes, romantiquement et sexuellement parlant.
-					<br>
-					<br>On peut par exemple citer la française <strong>Amélie Mauresmo</strong> qui a fait son
-					coming-out à l’âge de 19 ans, en 1999.
-				</p>
-			</div>
-		</div>
-		<div class="section-lgbt">
-			<div class="visible-panel gays">
-				<h2>Gays</h2>
-			</div>
-			<div class="toggle-panel">
-				<p>Cette lettre représente les individus gays. Ce sont des hommes qui sont attirés par les personnes de
-					sexe masculin. Un autre terme, autant valable pour les lesbiennes que les gays, qui est utilisé pour
-					les décrire est homosexuels.
-					<br>
-					<br>Une personnalité française qui tombe sous cette définition serait le producteur, présentateur et
-					humoriste <strong>Laurent Ruquier</strong>, qui est ouvert sur le sujet. Il raconte notamment avoir
-					découvert son homosexualité très tardivement.
-				</p>
-			</div>
-		</div>
-		<div class="section-lgbt">
-			<div class="visible-panel bisexuels">
-				<h2>Bisexuels</h2>
-			</div>
-			<div class="toggle-panel">
-				<p>La bisexualité est le fait d’éprouver de l’attirance autant pour les femmes que les hommes. Ces
-					attirances peuvent être simultanées ou différées pendant certaines périodes de la vie, où l’on
-					préfèrera les personnes d’un sexe à celles d’un autre.
-					<br>
-					<br>Un exemple connu de star bisexuelle serait l’actrice américano-cambodgienne <strong>Angelina
-						Jolie</strong>. Cette dernière a reconnu avoir eu des relations avec l’actrice <strong>Jenny
-						Shimizu</strong>, mais a également été mariée à <strong>Brad Pitt</strong>.
-				</p>
-			</div>
-		</div>
-		<div class="section-lgbt">
-			<div class="visible-panel transexuels">
-				<h2>Transgenres</h2>
-			</div>
-			<div class="toggle-panel">
-				<p>La trans-identité, souvent abrégée par le mot “trans”, est le fait de ne pas se définir par le sexe
-					attribué à la naissance.
-					<br>
-					<br>Parmi les célébrités se qualifiant de trans, on peut citer l’actrice de la série Orange Is the
-					New Black, <strong>Laverne Cox</strong>, qui a notamment fait la couverture du Times magazine en
-					Juin 2014. On peut en citer une seconde, comme <strong>Caitlyn Jenner</strong>, américaine médaillée
-					d’or aux Jeux Olympiques de Montréal (1976) en décathlon.
-				</p>
-			</div>
-		</div>
-		<div class="section-lgbt">
-			<div class="visible-panel queers">
-				<h2>Queers</h2>
-			</div>
-			<div class="toggle-panel">
-				<p>Les personnes queers ne sont pas définies par une caractéristique particulière, mais plutôt en
-					s’excluant de la définition de l’hétérosexualité. C’est également un terme très générique pour les
-					personnes qui se définissent par une identité de genre différente du traditionnel spectre binaire
-					(masculin ou féminin). En un sens, on pourrait dire que tous les sigles et toutes les définitions de
-					la communauté LGBT sont inclus dans la notion “queer”.
-					<br>
-					<br>Le mot anglais queer est traduit en français par les termes <strong>“étrange”, “bizarre”,
-						“suspect”, “louche”</strong>.
-				</p>
-			</div>
-		</div>
-		<div class="section-lgbt">
-			<div class="visible-panel intersexes">
-				<h2>Intersexes</h2>
-			</div>
-			<div class="toggle-panel">
-				<p>Les personnes intersexes sont des personnes nées avec des caractéristiques sexuelles particulières,
-					et auxquelles on ne pouvait assigner un genre binaire (homme ou femme). Bien que rares, ces cas
-					représenteraient, selon la professeur américaine Anne Fausto-Sterling, 1 à 2 naissances pour 1000
-					(<strong>0.17 à 0.2%</strong>). Ces chiffres sont cependant contestés par de nombreux professeurs et
-					chercheurs. A noter que chacun d’entre eux a sa définition propre de l’intersexuation, ce qui donne
-					des résultats différents allant de <strong>0.015% à 0.4%</strong>. Dans la plupart des cas, les
-					nouveaux-nés subissent des opérations correctives très peu de temps après la naissance.
-					<br>
-					<br>Un exemple très connu de personne intersexe est l’athlète sud-africaine, double championne
-					Olympique du 800m, <strong>Caster Semenya</strong>.
-				</p>
-			</div>
-		</div>
-		<div class="section-lgbt">
-			<div class="visible-panel asexuels">
-				<h2>Asexuels</h2>
-			</div>
-			<div class="toggle-panel">
-				<p>Les individus asexuels sont des personnes n’éprouvant aucune attraction sexuelle, que ce soit envers
-					elle-même ou d’autres personnes. Il ne faut pas confondre le terme avec la définition d’abstinence
-					sexuelle. Une personne asexuelle peut très bien avoir des relations sexuelles, mais ce qui les
-					motivent sera autre qu’une attirance émanant de leurs personnes.
-					<br>
-					<br>On peut prendre comme exemple le fait de satisfaire leur partenaire, ou l’envie d’avoir des
-					enfants. On peut citer parmi les personnes célèbres nul autre que le père de la psychanalyse,
-					<strong>Freud</strong>. Ce dernier aurait déclaré “avoir trouvé quelque chose de plus intéressant
-					(psychanalyse) à faire”.
-				</p>
-			</div>
-		</div>
-		<div class="section-lgbt">
-			<div class="visible-panel plus">
-				<h2>+</h2>
-			</div>
-			<div class="toggle-panel">
-				<p>Le “+” que l’on peut retrouver dans certains sigles indique simplement une volonté d’inclure dans la
-					définition du sigle toutes les autres personnes qui en ont été oublié ou que l’on ne peut nommer.
-					<br>
-					<br>On voit une variante du “+” qui est transformé en “O” dans certains sigles. Cette variante
-					signifie <strong>Others</strong> : “<strong>les autres</strong>” dans la langue de Shakespeare.
-				</p>
-			</div>
-		</div>
-	</div>
-	<footer class="hidden">
-		<div class="container">
-			<div class="row">
-				<div class="col" id="service">
-					<h3>Niji</h3>
-					<p align="justify">Site Web créé par des étudiants ADIMAKER pour sensibiliser notre entourage sur la
-						cause LGBT+ ainsi que le féminisme.</p>
-				</div>
-				<div class="col" id="service">
-					<h3>Liens utiles</h3>
-					<ul class="links">
-						<li><a href="#">Accueil</a></li>
-						<li><a href="#">A propos</a></li>
-						<li><a href="#">Qui sommes nous ?</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="col" id="service">
-					<h3>Contact</h3>
-					<ul class="links">
-						<li><a href="https://www.linkedin.com/in/romain-torchy/">Romain Torchy</a></li>
-						<li><a href="https://www.linkedin.com/in/lou-philippe-542076252/">Lou Philippe</a></li>
-						<li><a href="https://www.linkedin.com/in/camille-coquerel-54083a234/">Camille Coquerel</a></li>
-						<li><a href="https://www.linkedin.com/in/axel-boucneau-688a54231/">Axel Boucneau</a></li>
-						<li><a href="#">Jalil Chrouki</a></li>
-						<li><a href="#">Elena Sikorski</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+        <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
 
-	<!-- Scripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-	<script src="https://cdn.rawgit.com/sarathsaleem/grained/master/grained.js"></script>
-	<script type="module" src="js/images-center.js"></script>
-	<script type="module" src="js/section-lgbt.js"></script>
-	<script type="module" src="js/marquee.js"></script>
-	<script type="module" src="js/gallery.js"></script>
+    <div id="preloader">
+        <div id="percent">1%</div>
+        <div id="bar">
+            <div id="barconfirm"></div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="center hidden">
+            <a href="procedures.html">
+                <p class="hoverable">Procédures</p>
+            </a>
+            <a href="lexique.html">
+                <p class="hoverable">Lexique</p>
+            </a>
+            <a href="/index.html">
+                <h1 class="hoverable"><sup>&nbsp; </sup>niji<sup>+</sup></h1>
+            </a>
+            <a href="bibliographie.html">
+                <p class="hoverable">Bibliographie</p>
+            </a>
+            <a href="equipe.html">
+                <p class="hoverable">Notre équipe</p>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="hero-marquee">
+        <div class="marquee">
+            <span class="clipped-text"><strong>Évènement Jeu</strong> - A VENIR - <strong>Atrium HEI</strong> au 13 Rue
+                de Toul à Lille.</span>
+            <span class="clipped-text"><strong>Évènement Jeu</strong> - A VENIR - <strong>Atrium HEI</strong> au 13 Rue
+                de Toul à Lille.</span>
+        </div>
+    </div>
+    <div class="center hidden" id="images-center">
+    </div>
+    <div class="center">
+        <h1 class="hidden hoverable">galerie</h1>
+    </div>
+    <div class="gallery hidden">
+        <div id="gallery">
+        </div>
+    </div>
+    <div class="center hidden">
+        <h1 class="hoverable">définitions</h1>
+    </div>
+    <div class="container-lgbt hidden">
+        <div class="section-lgbt">
+            <div class="visible-panel lesbiennes">
+                <h2>Lesbiennes</h2>
+            </div>
+            <div class="toggle-panel">
+                <p>Cette lettre représente le mouvement lesbien. Les lesbiennes sont des femmes qui sont attirées par
+                    d’autres femmes, romantiquement et sexuellement parlant.
+                    <br>
+                    <br>On peut par exemple citer la française <strong>Amélie Mauresmo</strong> qui a fait son
+                    coming-out à l’âge de 19 ans, en 1999.
+                </p>
+            </div>
+        </div>
+        <div class="section-lgbt">
+            <div class="visible-panel gays">
+                <h2>Gays</h2>
+            </div>
+            <div class="toggle-panel">
+                <p>Cette lettre représente les individus gays. Ce sont des hommes qui sont attirés par les personnes de
+                    sexe masculin. Un autre terme, autant valable pour les lesbiennes que les gays, qui est utilisé pour
+                    les décrire est homosexuels.
+                    <br>
+                    <br>Une personnalité française qui tombe sous cette définition serait le producteur, présentateur et
+                    humoriste <strong>Laurent Ruquier</strong>, qui est ouvert sur le sujet. Il raconte notamment avoir
+                    découvert son homosexualité très tardivement.
+                </p>
+            </div>
+        </div>
+        <div class="section-lgbt">
+            <div class="visible-panel bisexuels">
+                <h2>Bisexuels</h2>
+            </div>
+            <div class="toggle-panel">
+                <p>La bisexualité est le fait d’éprouver de l’attirance autant pour les femmes que les hommes. Ces
+                    attirances peuvent être simultanées ou différées pendant certaines périodes de la vie, où l’on
+                    préfèrera les personnes d’un sexe à celles d’un autre.
+                    <br>
+                    <br>Un exemple connu de star bisexuelle serait l’actrice américano-cambodgienne <strong>Angelina
+                        Jolie</strong>. Cette dernière a reconnu avoir eu des relations avec l’actrice <strong>Jenny
+                        Shimizu</strong>, mais a également été mariée à <strong>Brad Pitt</strong>.
+                </p>
+            </div>
+        </div>
+        <div class="section-lgbt">
+            <div class="visible-panel transexuels">
+                <h2>Transgenres</h2>
+            </div>
+            <div class="toggle-panel">
+                <p>La trans-identité, souvent abrégée par le mot “trans”, est le fait de ne pas se définir par le sexe
+                    attribué à la naissance.
+                    <br>
+                    <br>Parmi les célébrités se qualifiant de trans, on peut citer l’actrice de la série Orange Is the
+                    New Black, <strong>Laverne Cox</strong>, qui a notamment fait la couverture du Times magazine en
+                    Juin 2014. On peut en citer une seconde, comme <strong>Caitlyn Jenner</strong>, américaine médaillée
+                    d’or aux Jeux Olympiques de Montréal (1976) en décathlon.
+                </p>
+            </div>
+        </div>
+        <div class="section-lgbt">
+            <div class="visible-panel queers">
+                <h2>Queers</h2>
+            </div>
+            <div class="toggle-panel">
+                <p>Les personnes queers ne sont pas définies par une caractéristique particulière, mais plutôt en
+                    s’excluant de la définition de l’hétérosexualité. C’est également un terme très générique pour les
+                    personnes qui se définissent par une identité de genre différente du traditionnel spectre binaire
+                    (masculin ou féminin). En un sens, on pourrait dire que tous les sigles et toutes les définitions de
+                    la communauté LGBT sont inclus dans la notion “queer”.
+                    <br>
+                    <br>Le mot anglais queer est traduit en français par les termes <strong>“étrange”, “bizarre”,
+                        “suspect”, “louche”</strong>.
+                </p>
+            </div>
+        </div>
+        <div class="section-lgbt">
+            <div class="visible-panel intersexes">
+                <h2>Intersexes</h2>
+            </div>
+            <div class="toggle-panel">
+                <p>Les personnes intersexes sont des personnes nées avec des caractéristiques sexuelles particulières,
+                    et auxquelles on ne pouvait assigner un genre binaire (homme ou femme). Bien que rares, ces cas
+                    représenteraient, selon la professeur américaine Anne Fausto-Sterling, 1 à 2 naissances pour 1000
+                    (<strong>0.17 à 0.2%</strong>). Ces chiffres sont cependant contestés par de nombreux professeurs et
+                    chercheurs. A noter que chacun d’entre eux a sa définition propre de l’intersexuation, ce qui donne
+                    des résultats différents allant de <strong>0.015% à 0.4%</strong>. Dans la plupart des cas, les
+                    nouveaux-nés subissent des opérations correctives très peu de temps après la naissance.
+                    <br>
+                    <br>Un exemple très connu de personne intersexe est l’athlète sud-africaine, double championne
+                    Olympique du 800m, <strong>Caster Semenya</strong>.
+                </p>
+            </div>
+        </div>
+        <div class="section-lgbt">
+            <div class="visible-panel asexuels">
+                <h2>Asexuels</h2>
+            </div>
+            <div class="toggle-panel">
+                <p>Les individus asexuels sont des personnes n’éprouvant aucune attraction sexuelle, que ce soit envers
+                    elle-même ou d’autres personnes. Il ne faut pas confondre le terme avec la définition d’abstinence
+                    sexuelle. Une personne asexuelle peut très bien avoir des relations sexuelles, mais ce qui les
+                    motivent sera autre qu’une attirance émanant de leurs personnes.
+                    <br>
+                    <br>On peut prendre comme exemple le fait de satisfaire leur partenaire, ou l’envie d’avoir des
+                    enfants. On peut citer parmi les personnes célèbres nul autre que le père de la psychanalyse,
+                    <strong>Freud</strong>. Ce dernier aurait déclaré “avoir trouvé quelque chose de plus intéressant
+                    (psychanalyse) à faire”.
+                </p>
+            </div>
+        </div>
+        <div class="section-lgbt">
+            <div class="visible-panel plus">
+                <h2>+</h2>
+            </div>
+            <div class="toggle-panel">
+                <p>Le “+” que l’on peut retrouver dans certains sigles indique simplement une volonté d’inclure dans la
+                    définition du sigle toutes les autres personnes qui en ont été oublié ou que l’on ne peut nommer.
+                    <br>
+                    <br>On voit une variante du “+” qui est transformé en “O” dans certains sigles. Cette variante
+                    signifie <strong>Others</strong> : “<strong>les autres</strong>” dans la langue de Shakespeare.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col" id="service">
+                    <h3>Niji</h3>
+                    <p align="justify">Site Web créé par des étudiants ADIMAKER pour sensibiliser notre entourage sur la
+                        cause LGBT+ ainsi que le féminisme.</p>
+                </div>
+                <div class="col" id="service">
+                    <h3>Liens utiles</h3>
+                    <ul class="links">
+                        <li><a href="/index.html">Accueil</a></li>
+                        <li><a href="/procedures.html">Procédures</a></li>
+                        <li><a href="/lexique.html">Lexique</a></li>
+                        <li><a href="/bibliographie.html">Bibliographie</a></li>
+                        <li><a href="/equipe.html">Notre équipe</a></li>
+                    </ul>
+                </div>
+                <div class="col" id="service">
+                    <h3>Contact</h3>
+                    <ul class="links">
+                        <li><a href="https://www.linkedin.com/in/romain-torchy/">Romain Torchy</a></li>
+                        <li><a href="https://www.linkedin.com/in/lou-philippe-542076252/">Lou Philippe</a></li>
+                        <li><a href="https://www.linkedin.com/in/camille-coquerel-54083a234/">Camille Coquerel</a></li>
+                        <li><a href="https://www.linkedin.com/in/axel-boucneau-688a54231/">Axel Boucneau</a></li>
+                        <li><a href="#">Jalil Chrouki</a></li>
+                        <li><a href="#">Elena Sikorski</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const tll = gsap.timeline({
+            paused: "true"
+        });
+        tll.to("#percent", "#bar", {
+            duration: .2,
+            opacity:0,
+            zIndex: -1,
+        });
+        tll.to("#preloader", {
+            duration: .8,
+            width: "0%"
+        });
+        var width = 1;
+        var bar = document.getElementById("barconfirm");
+        var id;
+        function move() {
+            id = setInterval(frame, 10);
+        }
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+                tll.play();
+            } else {
+                width++;
+                bar.style.width = width + "%";
+                document.getElementById("percent").innerHTML = width + "%";
+            }
+        }
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdn.rawgit.com/sarathsaleem/grained/master/grained.js"></script>
+    <script type="module" src="js/images-center.js"></script>
+    <script type="module" src="js/section-lgbt.js"></script>
+    <script type="module" src="js/marquee.js"></script>
+    <script type="module" src="js/gallery.js"></script>
 </body>
 
 </html>
