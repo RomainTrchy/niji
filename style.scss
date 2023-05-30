@@ -63,7 +63,7 @@
   user-select: none;
 }
 
-.nav{
+.navbar {
   position: fixed;
   width: 100%;
   height: 100px;
@@ -75,43 +75,43 @@
   z-index: 999;
 }
 
-a{
+a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--primary-color);
   padding: 0 1rem;
   font-size: 12px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
-.logo{
+.logo {
   position: fixed;
   top: 0;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   margin-top: 1rem;
   padding: 1rem;
   z-index: 1000;
 }
 
-.container{
+.container {
   width: 100%;
   height: 100vh;
   background: var(--secondary-color);
 }
 
-.content{
+.content {
   background: var(--secondary-color);
   position: relative;
 }
 
-.content img{
+.content img {
   width: 100%;
   object-fit: cover;
 }
 
-img{
+img {
   margin-bottom: 4rem;
 }
 
@@ -196,7 +196,7 @@ body {
 }
 
 .tile {
-  border-radius: var(--primary-border-radius);
+  // border-radius: var(--primary-border-radius);
   position: absolute;
   transition: transform 80ms ease;
   background-size: cover;
@@ -218,7 +218,7 @@ body {
   margin: var(--primary-margin);
   width: 100%;
   height: 80vh;
-  border-radius: var(--primary-border-radius);
+  // border-radius: var(--primary-border-radius);
   object-fit: cover;
 }
 
@@ -693,6 +693,130 @@ footer {
   }
 }
 
+.wrapper {
+  min-height: 100vh;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  font-size: 40px;
+  font-weight: 100;
+  background-color: #22a7f0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  $colors: white, #f64747, #22a7f0, #f9690e, #9b59b6, #03c9a9, #ffcc00;
+  @for $i from 1 through length($colors) {
+    &:nth-child(#{$i}) {
+      background: nth($colors, $i);
+    }
+  }
+}
+
+.nav {
+  &__wrapper {
+    position: fixed;
+    height: 100%;
+    padding: 30px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+  }
+
+  & {
+    margin: 0 0 100px 30px;
+  }
+  &__counter {
+    font-size: 24px;
+    transition: all 0.15s ease-out;
+  }
+  &__title {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0 0 0.25em;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease-out, opacity 0.2s ease-out;
+  }
+  &__body {
+    font-weight: 100;
+    font-size: 18px;
+    font-size: 18px;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease-out, opacity 0.2s ease-out;
+  }
+
+  li {
+    position: relative;
+    transition: all 0.3s ease-out;
+    margin-bottom: 1em;
+
+    &:after {
+      content: "";
+      display: block;
+      border-left: 2px solid white;
+      border-top: 2px solid white;
+      height: 250px;
+      width: 20px;
+      position: absolute;
+      left: -30px;
+      top: 15px;
+    }
+
+    a {
+      display: block;
+      padding: 0;
+      color: #fff;
+      transition: all 0.15s ease-out;
+
+      &:hover {
+        background-color: transparent;
+        padding-left: 1em;
+      }
+      &:focus {
+        background-color: transparent;
+      }
+    }
+
+    &.active {
+      pointer-events: none;
+      padding-left: 1em;
+
+      &:after {
+        width: 35px;
+        height: 400px;
+        top: 35px;
+      }
+
+      .nav__counter {
+        font-size: 48px;
+      }
+      .nav__title {
+        height: 40px;
+        opacity: 1;
+        overflow: visible;
+      }
+      .nav__body {
+        height: 100px;
+        opacity: 1;
+        overflow: visible;
+      }
+    }
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --secondary-color: #000;
@@ -829,7 +953,7 @@ footer {
   }
 }
 
-#preloader{
+#preloader {
   position: absolute;
   display: flex;
   align-items: center;
@@ -840,17 +964,17 @@ footer {
   background-color: black;
   flex-direction: column;
 }
-#percent{
+#percent {
   font-size: 2rem;
   font-weight: 600;
   color: white;
   margin-bottom: 20px;
 }
-#bar{
-  width:60%;
+#bar {
+  width: 60%;
 }
-#barconfirm{
-  width:1%;
+#barconfirm {
+  width: 1%;
   padding: 1px 0px;
   background-color: white;
 }
